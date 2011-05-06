@@ -1,0 +1,634 @@
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  6 MAY 2011 13:17
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**paper
+(./paper.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2009-06-19, ngerman-x-2009-06-19, ancientgreek, ibycus, arabic, armenian
+, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danish, dutch, u
+kenglish, usenglishmax, esperanto, estonian, farsi, finnish, french, galician, 
+german, ngerman, swissgerman, monogreek, greek, hungarian, icelandic, assamese,
+ bengali, gujarati, hindi, kannada, malayalam, marathi, oriya, panjabi, tamil, 
+telugu, indonesian, interlingua, irish, italian, kurmanji, lao, latin, latvian,
+ lithuanian, mongolian, mongolianlmc, bokmal, nynorsk, polish, portuguese, roma
+nian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, turkish,
+ turkmen, ukrainian, uppersorbian, welsh, loaded.
+(./sig-alt-nocopy.cls
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/02/14 v0.04n Graphics/color for pdfTeX
+\Gread@gobject=\count79
+))
+\Gin@req@height=\dimen102
+\Gin@req@width=\dimen103
+)
+\epsfxsize=\dimen104
+\epsfysize=\dimen105
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks15
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip41
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks16
+\ex@=\dimen106
+))
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen107
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count80
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count81
+\leftroot@=\count82
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count83
+\DOTSCASE@=\count84
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen108
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count85
+\c@MaxMatrixCols=\count86
+\dotsspace@=\muskip10
+\c@parentequation=\count87
+\dspbrk@lvl=\count88
+\tag@help=\toks17
+\row@=\count89
+\column@=\count90
+\maxfields@=\count91
+\andhelp@=\toks18
+\eqnshift@=\dimen109
+\alignsep@=\dimen110
+\tagshift@=\dimen111
+\tagwidth@=\dimen112
+\totwidth@=\dimen113
+\lineht@=\dimen114
+\@envbody=\toks19
+\multlinegap=\skip42
+\multlinetaggap=\skip43
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+Document Class 'sig-alt-full' <27th. September '02>. Modified by G.K.M. Tobin/G
+erry Murray
+Based in part upon document Style `acmconf' <22 May 89>. Hacked 4/91 by
+shivers@cs.cmu.edu, 4/93 by theobald@cs.mcgill.ca
+Excerpts were taken from (Journal Style) 'esub2acm.cls'.
+****** Bugs/comments/suggestions/technicalities to Gerry Murray -- murray@hq.ac
+m.org ******
+Questions on the style, SIGS policies, etc. to Julie Goetz goetz@acm.org or Adr
+ienne Griscti griscti@acm.org
+\footheight=\dimen115
+\@maxsep=\dimen116
+\@dblmaxsep=\dimen117
+\aucount=\count92
+\originalaucount=\count93
+\auwidth=\dimen118
+\auskip=\dimen119
+\auskipcount=\count94
+\auskip=\dimen120
+\allauboxes=\dimen121
+\addauthors=\toks21
+\addauflag=\count95
+\subtitletext=\toks22
+\savesection=\count96
+\sectioncntr=\count97
+\c@figure=\count98
+\c@table=\count99
+\titleboxnotes=\toks23
+\titleboxnoteflag=\count100
+
+LaTeX Warning: You have requested document class `sig-alt-nocopy',
+               but the document class provides `sig-alt-full'.
+
+Document Class: sig-alt-full 2002/09/27 - V1.1 - based on acmproc.cls V1.3 <Nov
+. 30 '99>
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
+)
+\@acmtitlebox=\box28
+\titlenotecount=\count101
+\tntoks=\toks24
+\tntokstwo=\toks25
+\tntoksthree=\toks26
+\tntoksfour=\toks27
+\tntoksfive=\toks28
+\catcount=\count102
+\c@part=\count103
+\c@section=\count104
+\c@subsection=\count105
+\c@subsubsection=\count106
+\c@paragraph=\count107
+
+Using 'Abbrev' bibliography style
+\bibindent=\dimen122
+\colcntr=\count108
+\savebox=\box29
+) (/usr/local/texlive/2010/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2006/05/08 v1.12 Space after command names (DPC,MH)
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/tools/dcolumn.sty
+Package: dcolumn 2001/05/28 v1.06 decimal alignment package (DPC)
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen123
+\extrarowheight=\dimen124
+\NC@list=\toks29
+\extratabsurround=\skip44
+\backup@length=\skip45
+))
+(/usr/local/texlive/2010/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen125
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/rotating/rotating.sty
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count109
+\rotFPtop=\skip46
+\rotFPbot=\skip47
+\rot@float@box=\box30
+\rot@mess@toks=\toks30
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+
+
+Package subfigure Warning: Your document class has a bad definition
+ of \endfigure, most likely
+ \let\endfigure=\end@float
+ which has now been changed to
+ \def\endfigure{\end@float}
+ because otherwise subsequent changes to \end@float
+ (like done by several packages changing float behaviour)
+ can't take effect on \endfigure.
+ Please complain to your document class author.
+
+
+Package subfigure Warning: Your document class has a bad definition
+ of \endtable, most likely
+ \let\endtable=\end@float
+ which has now been changed to
+ \def\endtable{\end@float}
+ because otherwise subsequent changes to \end@float
+ (like done by several packages changing float behaviour)
+ can't take effect on \endtable.
+ Please complain to your document class author.
+
+\subfigtopskip=\skip48
+\subfigcapskip=\skip49
+\subfigcaptopadj=\dimen126
+\subfigbottomskip=\skip50
+\subfigcapmargin=\dimen127
+\subfiglabelskip=\skip51
+\c@subfigure=\count110
+\c@lofdepth=\count111
+\c@subtable=\count112
+\c@lotdepth=\count113
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/local/texlive/2010/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip52
+\subfig@bottom=\skip53
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/endnotes/endnotes.sty
+\c@endnote=\count114
+\endnotesep=\dimen128
+\@enotes=\write3
+)
+(./paper.aux
+
+LaTeX Warning: Label `expsize' multiply defined.
+
+
+LaTeX Warning: Label `expdur' multiply defined.
+
+
+LaTeX Warning: Label `explife' multiply defined.
+
+
+LaTeX Warning: Label `expswaps' multiply defined.
+
+
+LaTeX Warning: Label `catusage' multiply defined.
+
+)
+\openout1 = `paper.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 39.
+ (/usr/local/texlive/2010/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+(/usr/local/texlive/2010/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count115
+\scratchdimen=\dimen129
+\scratchbox=\box31
+\nofMPsegments=\count116
+\nofMParguments=\count117
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count118
+\MPscratchDim=\dimen130
+\MPnumerator=\count119
+\everyMPtoPDFconversion=\toks32
+) (/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2010/04/01 v0.9 Utility functions of pdfTeX for LuaTeX (HO)
+
+
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2010/04/26 v1.7 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2007/09/30 v1.0 Managing graphics extensions (HO)
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2010/02/22 v3.7 Keyval support for LaTeX options (HO)
+
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2010/03/01 v1.9 Key value parser (HO)
+
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2010/01/28 v1.3 Prefix for e-TeX command names (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 436.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    Try loading font information for U+msa on input line 64.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 64.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 64.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+) (./abstract.tex)
+(./intro.tex) (./relatedwork.tex) (./terms.tex
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
+
+
+LaTeX Warning: Citation `emulab' on page \thepage  undefined on input line 7.
+
+
+LaTeX Warning: Citation `deterlab' on page \thepage  undefined on input line 8.
+
+
+
+LaTeX Warning: Citation `planetlab' on page \thepage  undefined on input line 9
+.
+
+
+LaTeX Warning: Reference `warmup' on page \thepage  undefined on input line 106
+.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1{/usr/local/texlive/2010/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
+Overfull \hbox (1.80038pt too wide) in paragraph at lines 117--128
+\OT1/ptm/m/n/9 and de-vel-op-ment of DE-TER testbed. \OT1/ptm/b/n/9 In-ter-nal 
+users \OT1/ptm/m/n/9 are those
+ []
+
+) (./data.tex
+
+LaTeX Warning: Citation `deter' on page \thepage  undefined on input line 6.
+
+
+Overfull \hbox (9.05446pt too wide) in paragraph at lines 28--35
+[]\OT1/ptm/m/n/9 Emulab: Pub-licly avail-able data about project top-ics and pr
+oject
+ []
+
+
+Overfull \hbox (6.19159pt too wide) in paragraph at lines 55--71
+ [] 
+ []
+
+) (./character.tex
+Overfull \hbox (5.14897pt too wide) in paragraph at lines 87--1
+[]\OT1/ptm/m/n/9 Now ex-plain why we wanted but couldn't clas-sify in-ac-tive p
+rojects
+ []
+
+<figs/warmup_user.pdf, id=11, 794.97pt x 614.295pt>
+File: figs/warmup_user.pdf Graphic file (type pdf)
+ <use figs/warmup_user.pdf>
+<figs/warmup_proj.pdf, id=12, 794.97pt x 614.295pt>
+File: figs/warmup_proj.pdf Graphic file (type pdf)
+ <use figs/warmup_proj.pdf>
+<figs/warmup_inact_user.pdf, id=13, 794.97pt x 614.295pt>
+File: figs/warmup_inact_user.pdf Graphic file (type pdf)
+
+<use figs/warmup_inact_user.pdf>
+<figs/warmup_inact_proj.pdf, id=14, 794.97pt x 614.295pt>
+File: figs/warmup_inact_proj.pdf Graphic file (type pdf)
+
+<use figs/warmup_inact_proj.pdf>
+<figs/exp.size.gnu.pdf, id=15, 794.97pt x 614.295pt>
+File: figs/exp.size.gnu.pdf Graphic file (type pdf)
+
+<use figs/exp.size.gnu.pdf>
+<figs/planet.size.gnu.pdf, id=16, 794.97pt x 614.295pt>
+File: figs/planet.size.gnu.pdf Graphic file (type pdf)
+
+<use figs/planet.size.gnu.pdf>
+<figs/exp.dur.gnu.pdf, id=17, 794.97pt x 614.295pt>
+File: figs/exp.dur.gnu.pdf Graphic file (type pdf)
+ <use figs/exp.dur.gnu.pdf>
+<figs/planet.dur.gnu.pdf, id=18, 794.97pt x 614.295pt>
+File: figs/planet.dur.gnu.pdf Graphic file (type pdf)
+
+<use figs/planet.dur.gnu.pdf>
+<figs/exp.life.gnu.pdf, id=19, 794.97pt x 614.295pt>
+File: figs/exp.life.gnu.pdf Graphic file (type pdf)
+
+<use figs/exp.life.gnu.pdf>
+<figs/planet.life.gnu.pdf, id=20, 794.97pt x 614.295pt>
+File: figs/planet.life.gnu.pdf Graphic file (type pdf)
+
+<use figs/planet.life.gnu.pdf>
+<figs/exp.swaps.gnu.pdf, id=21, 794.97pt x 614.295pt>
+File: figs/exp.swaps.gnu.pdf Graphic file (type pdf)
+
+<use figs/exp.swaps.gnu.pdf>
+<figs/planet.swaps.gnu.pdf, id=22, 794.97pt x 614.295pt>
+File: figs/planet.swaps.gnu.pdf Graphic file (type pdf)
+
+<use figs/planet.swaps.gnu.pdf>
+<figs/topo.gnu.pdf, id=23, 794.97pt x 614.295pt>
+File: figs/topo.gnu.pdf Graphic file (type pdf)
+ <use figs/topo.gnu.pdf>
+<figs/topop.gnu.pdf, id=24, 794.97pt x 614.295pt>
+File: figs/topop.gnu.pdf Graphic file (type pdf)
+ <use figs/topop.gnu.pdf>
+<figs/proj.size.gnu.pdf, id=25, 794.97pt x 614.295pt>
+File: figs/proj.size.gnu.pdf Graphic file (type pdf)
+
+<use figs/proj.size.gnu.pdf>
+<figs/proj.size.cmp.gnu.pdf, id=26, 794.97pt x 614.295pt>
+File: figs/proj.size.cmp.gnu.pdf Graphic file (type pdf)
+
+<use figs/proj.size.cmp.gnu.pdf> [2] [3 <./figs/topo.gnu.pdf, page is rotated 9
+0 degrees> <./figs/topop.gnu.pdf, page is rotated 90 degrees> <./figs/proj.size
+.gnu.pdf, page is rotated 90 degrees> <./figs/proj.size.cmp.gnu.pdf, page is ro
+tated 90 degrees>] [4 <./figs/warmup_user.pdf, page is rotated 90 degrees> <./f
+igs/warmup_proj.pdf, page is rotated 90 degrees> <./figs/warmup_inact_user.pdf,
+ page is rotated 90 degrees> <./figs/warmup_inact_proj.pdf, page is rotated 90 
+degrees>] [5 <./figs/exp.size.gnu.pdf, page is rotated 90 degrees> <./figs/plan
+et.size.gnu.pdf, page is rotated 90 degrees> <./figs/exp.dur.gnu.pdf, page is r
+otated 90 degrees> <./figs/planet.dur.gnu.pdf, page is rotated 90 degrees> <./f
+igs/exp.life.gnu.pdf, page is rotated 90 degrees>]
+<figs/proj.user.gnu.pdf, id=92, 794.97pt x 614.295pt>
+File: figs/proj.user.gnu.pdf Graphic file (type pdf)
+
+<use figs/proj.user.gnu.pdf>
+<figs/proj.user.cmp.gnu.pdf, id=93, 794.97pt x 614.295pt>
+File: figs/proj.user.cmp.gnu.pdf Graphic file (type pdf)
+
+<use figs/proj.user.cmp.gnu.pdf>
+<figs/proj.active.gnu.pdf, id=94, 794.97pt x 614.295pt>
+File: figs/proj.active.gnu.pdf Graphic file (type pdf)
+
+<use figs/proj.active.gnu.pdf>
+<figs/proj.active.cmp.gnu.pdf, id=95, 794.97pt x 614.295pt>
+File: figs/proj.active.cmp.gnu.pdf Graphic file (type pdf)
+
+<use figs/proj.active.cmp.gnu.pdf>
+<figs/proj.swaps.gnu.pdf, id=96, 794.97pt x 614.295pt>
+File: figs/proj.swaps.gnu.pdf Graphic file (type pdf)
+
+<use figs/proj.swaps.gnu.pdf>
+<figs/proj.swaps.cmp.gnu.pdf, id=97, 794.97pt x 614.295pt>
+File: figs/proj.swaps.cmp.gnu.pdf Graphic file (type pdf)
+
+<use figs/proj.swaps.cmp.gnu.pdf>
+<figs/proj.agevsactive.res.gnu.pdf, id=98, 794.97pt x 614.295pt>
+File: figs/proj.agevsactive.res.gnu.pdf Graphic file (type pdf)
+
+<use figs/proj.agevsactive.res.gnu.pdf>
+<figs/proj.agevsactivecl.gnu.pdf, id=99, 794.97pt x 614.295pt>
+File: figs/proj.agevsactivecl.gnu.pdf Graphic file (type pdf)
+
+<use figs/proj.agevsactivecl.gnu.pdf>
+<figs/proj.uservsauserres.gnu.pdf, id=100, 794.97pt x 614.295pt>
+File: figs/proj.uservsauserres.gnu.pdf Graphic file (type pdf)
+
+<use figs/proj.uservsauserres.gnu.pdf>
+<figs/proj.uservsausercl.gnu.pdf, id=101, 794.97pt x 614.295pt>
+File: figs/proj.uservsausercl.gnu.pdf Graphic file (type pdf)
+
+<use figs/proj.uservsausercl.gnu.pdf>
+<figs/user.exp.gnu.pdf, id=102, 794.97pt x 614.295pt>
+File: figs/user.exp.gnu.pdf Graphic file (type pdf)
+
+<use figs/user.exp.gnu.pdf>
+<figs/user.exp.cmp.gnu.pdf, id=103, 794.97pt x 614.295pt>
+File: figs/user.exp.cmp.gnu.pdf Graphic file (type pdf)
+
+<use figs/user.exp.cmp.gnu.pdf>
+<figs/user.swaps.gnu.pdf, id=104, 794.97pt x 614.295pt>
+File: figs/user.swaps.gnu.pdf Graphic file (type pdf)
+
+<use figs/user.swaps.gnu.pdf>
+<figs/user.swaps.cmp.gnu.pdf, id=105, 794.97pt x 614.295pt>
+File: figs/user.swaps.cmp.gnu.pdf Graphic file (type pdf)
+
+<use figs/user.swaps.cmp.gnu.pdf>
+<figs/user.life.gnu.pdf, id=106, 794.97pt x 614.295pt>
+File: figs/user.life.gnu.pdf Graphic file (type pdf)
+
+<use figs/user.life.gnu.pdf>
+<figs/user.life.cmp.gnu.pdf, id=107, 794.97pt x 614.295pt>
+File: figs/user.life.cmp.gnu.pdf Graphic file (type pdf)
+
+<use figs/user.life.cmp.gnu.pdf>
+<figs/user.active.gnu.pdf, id=108, 794.97pt x 614.295pt>
+File: figs/user.active.gnu.pdf Graphic file (type pdf)
+
+<use figs/user.active.gnu.pdf>
+<figs/user.active.cmp.gnu.pdf, id=109, 794.97pt x 614.295pt>
+File: figs/user.active.cmp.gnu.pdf Graphic file (type pdf)
+
+<use figs/user.active.cmp.gnu.pdf>
+<figs/user.proj.gnu.pdf, id=110, 794.97pt x 614.295pt>
+File: figs/user.proj.gnu.pdf Graphic file (type pdf)
+
+<use figs/user.proj.gnu.pdf>
+<figs/user.proj.cmp.gnu.pdf, id=111, 794.97pt x 614.295pt>
+File: figs/user.proj.cmp.gnu.pdf Graphic file (type pdf)
+
+<use figs/user.proj.cmp.gnu.pdf>
+<figs/exp.idle.gnu.pdf, id=112, 794.97pt x 614.295pt>
+File: figs/exp.idle.gnu.pdf Graphic file (type pdf)
+
+<use figs/exp.idle.gnu.pdf>
+<figs/period.idle.gnu.pdf, id=113, 794.97pt x 614.295pt>
+File: figs/period.idle.gnu.pdf Graphic file (type pdf)
+
+<use figs/period.idle.gnu.pdf>) (./function.tex
+<figs/cat.usage.gnu.pdf, id=114, 794.97pt x 614.295pt>
+File: figs/cat.usage.gnu.pdf Graphic file (type pdf)
+
+<use figs/cat.usage.gnu.pdf>
+<figs/cat.usage.emu.gnu.pdf, id=115, 794.97pt x 614.295pt>
+File: figs/cat.usage.emu.gnu.pdf Graphic file (type pdf)
+
+<use figs/cat.usage.emu.gnu.pdf>) (./conclusion.tex)
+No file paper.bbl.
+[6 <./figs/planet.life.gnu.pdf, page is rotated 90 degrees> <./figs/exp.swaps.g
+nu.pdf, page is rotated 90 degrees> <./figs/planet.swaps.gnu.pdf, page is rotat
+ed 90 degrees>] [7 <./figs/proj.user.gnu.pdf, page is rotated 90 degrees> <./fi
+gs/proj.user.cmp.gnu.pdf, page is rotated 90 degrees> <./figs/proj.active.gnu.p
+df, page is rotated 90 degrees> <./figs/proj.active.cmp.gnu.pdf, page is rotate
+d 90 degrees> <./figs/proj.swaps.gnu.pdf, page is rotated 90 degrees> <./figs/p
+roj.swaps.cmp.gnu.pdf, page is rotated 90 degrees>] [8 <./figs/proj.agevsactive
+.res.gnu.pdf, page is rotated 90 degrees> <./figs/proj.agevsactivecl.gnu.pdf, p
+age is rotated 90 degrees> <./figs/proj.uservsauserres.gnu.pdf, page is rotated
+ 90 degrees> <./figs/proj.uservsausercl.gnu.pdf, page is rotated 90 degrees> <.
+/figs/user.exp.gnu.pdf, page is rotated 90 degrees> <./figs/user.exp.cmp.gnu.pd
+f, page is rotated 90 degrees>] [9 <./figs/user.swaps.gnu.pdf, page is rotated 
+90 degrees> <./figs/user.swaps.cmp.gnu.pdf, page is rotated 90 degrees> <./figs
+/user.life.gnu.pdf, page is rotated 90 degrees> <./figs/user.life.cmp.gnu.pdf, 
+page is rotated 90 degrees> <./figs/user.active.gnu.pdf, page is rotated 90 deg
+rees> <./figs/user.active.cmp.gnu.pdf, page is rotated 90 degrees>] [10 <./figs
+/user.proj.gnu.pdf, page is rotated 90 degrees> <./figs/user.proj.cmp.gnu.pdf, 
+page is rotated 90 degrees> <./figs/exp.idle.gnu.pdf, page is rotated 90 degree
+s> <./figs/period.idle.gnu.pdf, page is rotated 90 degrees>] [11 <./figs/cat.us
+age.gnu.pdf, page is rotated 90 degrees>] [12 <./figs/cat.usage.emu.gnu.pdf, pa
+ge is rotated 90 degrees>] (./paper.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 3047 strings out of 493747
+ 42480 string characters out of 3143546
+ 111393 words of memory out of 3000000
+ 6230 multiletter control sequences out of 15000+200000
+ 27280 words of font info for 58 fonts, out of 3000000 for 9000
+ 714 hyphenation exceptions out of 8191
+ 39i,11n,26p,443b,255s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/tex
+live/2010/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/20
+10/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2010/texm
+f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2010/texmf-dist/fon
+ts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/u
+rw/times/utmri8a.pfb>
+Output written on paper.pdf (12 pages, 601220 bytes).
+PDF statistics:
+ 270 PDF objects out of 1000 (max. 8388607)
+ 207 compressed objects within 3 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 201 words of extra memory for PDF output out of 10000 (max. 10000000)
+

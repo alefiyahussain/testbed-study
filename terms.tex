@@ -1,0 +1,159 @@
+\section{Background}
+\label{sec:terms}
+
+We define a \textit{network testbed} as any collection of physical or
+virtual machines that is shared by multiple users with the goal to
+support research or education activities. This is a broad definition
+that encompasses Emulab-like testbeds such as Emulab \cite{emulab} or
+DETER \cite{deterlab} where users gain exclusive, superuser access to
+physical nodes, VM-based testbeds such as Planetlab \cite{planetlab}
+where multiple users share access to a physical node and private
+testbeds in research labs and companies. The goal of this paper is to
+understand how network testbeds are used and to identify places where
+improvements are needed.
+
+Discuss how testbeds differ and their modes of use. Discuss project,
+slice, experiment, etc. Say experiments and projects have descriptions.
+We will show mapping as we go and in a table.
+
+Say how we lack info about what users do with machines.
+
+\subsection{Testbed Uses}
+
+Two main testbed use modes we investigate in this paper are for research
+and for classes. In research use model a group of users investigates a
+common research problem and uses testbed to evaluate the problem or
+their solutions. The users could be from academia (faculty and
+students), a government lab (researchers, staff)  or industry (company
+employees). Their final goal may be to produce research papers, white
+papers, to change government policies or to test a product. This variety
+of research users makes it difficult for testbed owners to evaluate the
+productivity of their users, ultimately quantifying how useful testbeds
+are for research, because some research outcomes may not be public. In
+classes teachers use testbeds to either illustrate a concept taught in
+class or to assign a practical project to students. This project may be
+of research nature, especially for upper division graduate classes,
+which blurs the line between class and research.
+
+\subsection{Terminology} \label{terminology}
+
+An \textbf{experiment definition} is the input submitted to the testbed
+(one or more times) describing resource needs and setup operations. The
+experiment definition is closely tied to \textit{one particular
+purpose}, e.g. a research question or a class project. It is uniquely
+identified by its name and can be modified while still keeping its
+identity.
+
+An \textbf{experiment instance} denotes the combination of experiment
+definition and testbed resources allocated to it. Return of the
+resources to the testbed denotes the end of this instance. On the other
+hand, a modification of the experiment definition which requires release
+and reallocation of resources (e.g. to change experiment topology or add
+more nodes) still belongs to the same instance. Thus an experiment
+instance may be associated with more than one resource set.
+
+A \textbf{project} is a collection of experiment definitions and people,
+under a single Principal Investigator (PI) aiming to investigate one
+specific research direction or taking one specific class.
+
+%Put picture here to illustrate definition vs instance and changing size
+
+In our investigation of testbed use patterns we have discovered a broad
+range of activity levels in every dimension. Some projects and some
+users were very active, while others generated none or a few experiment
+instances. Some experiment instances were long-lived (months) while
+others were extremely short (under 10 minutes). From pure use pattern
+data it was impossible to understand the causes of such broad range of
+uses. To disambiguate and possibly explain this data we have attempted
+to somehow quantify from project descriptions, experiment definition
+descriptions, personal conversations with the PIs and publications
+co-authored by project members how useful the testbed was for each given
+project. We could do so only for DETER data as the data we have from
+other testbeds is anonymized due to privacy concerns.
+
+The next several definitions apply to any testbed.
+
+An \textbf{experiment manipulation} is any interaction between the user
+and the testbed's control server. It usually results in allocation or
+deallocation of testbed resources, either physical resources or database
+entries.
+
+An \textbf{active project} is a project associated with at least one
+experiment manipulation. Similarly an \textbf{active user} is a user
+that has manipulated at least one experiment. The rest of the projects
+and users are labeled \textbf{inactive}. Further, users that do not
+belong to any project are labeled \textbf{orphan users}. While it is
+possible for an inactive but non-orphan user to still do some useful
+work with the testbed, e.g., by logging into an experiment instance
+allocated by another member of its project, orphan users cannot do any
+useful work on the testbed.
+
+We now introduce a few more definitions so we could attempt to separate
+those projects and users where we see little associated activity due to
+their short presence on the testbed from those where low activity is
+related to poor match of the testbed with their research needs
+
+A \textbf{warm-up time} is the time elapsed between a project's creation
+and the first experiment manipulation.
+
+%An \textbf{early project} is a project that has been present on the
+testbed for less than a year. Similarly an \textbf{early user} is a user
+that has been present on the testbed (has an account) for less than a
+year. We have selected the threshold value of a year by observing the
+distribution of warm up time for \textit{those research projects that
+resulted in measurable outcome acknowledging DETER use (aka ``outcome
+projects'', see below)}. This distribution is shown in Figure
+\ref{warmup}. The highest warmup time we see is a little below 8 months.
+To be conservative we select 1 year as the threshold for the project to
+become active.
+
+%A \textbf{stale project} is a project that is not early and is not
+active. Similarly a \textbf{stale user} is a user that is neither early
+nor active.
+
+We further divide active projects on DETER into several categories. As
+mentioned above, due to privacy concerns, we cannot perform similar
+classification for projects on other testbeds. \begin{enumerate} \item
+\textbf{Internal projects} are those projects created for monitoring and
+development of DETER testbed. \textbf{Internal users} are those that are
+members of any internal project. While many of those users also lead
+research projects on DETER we have found through manual investigation
+that PIs have hard time separating their activities into multiple
+projects, i.e. some internal projects may be used to do research about
+topics unrelated to the DETER testbed and vice versa. To avoid bias in
+our data, since internal users have vested interest in the testbed and
+are likely to be very active, we exclude both internal projects and
+internal users from all DETER statistics. % We actually do this for
+Emulab as well. We do not exclude them for project size/activity
+calculation \item \textbf{Outcome projects} are those projects where we
+can clearly attribute some measurable outcome of the project to its use
+of DETER. We classify research projects as outcome projects if they have
+produced at least one peer-reviewed publication (this includes MS and
+PhD thesis), which acknowledges use of the DETER testbed. We classify
+class projects as outcome projects if they have more than three members
+(one PI and two TAs),  which indicates that students taking the class
+have used DETER for their class work. There is one project that has 8
+users and we classified it as no-outcome because we know these are PIs
+exchanging materials. We selected the threshold value of three members
+empirically. The rest of the projects are labeled as \textbf{no-outcome
+projects}. \item \textbf{Try-and-leave projects} are those no-outcome
+projects that have created a small number of experiment instances,
+followed by at least a year of inactivity and where descriptions of
+experiment instances suggest attempts to learn about the testbed (e.g.
+``learning how to use DETER'',``trying out SEER''). We believe that this
+use pattern indicates that the testbed did not match the users' needs.
+\item \textbf{Hard-to-tell projects} are those that do not fall into
+either of the above categories. That is, they exhibit usage patterns
+that are suggestive of performing research of developing class materials
+with DETER but they have not yet generated a measurable outcome. In case
+of research projects there are many reasons for this effect. First, some
+research may take years to mature to publication, i.e. it may just be
+too early to tell. Second, the project may be industrial or government
+project and thus we cannot expect it to produce a peer-reviewed
+publication output. Since we know project and user affiliations on DETER
+we can identify such projects (and we do later in text). Third, some use
+of the testbed may generate negative results, e.g., a user believed he
+could test some hypothesis on the testbed but concluded otherwise.
+\end{enumerate}
+
+% Add figure to show project classes and user classes

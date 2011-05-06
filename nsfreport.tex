@@ -1,0 +1,379 @@
+\documentclass[12pt]{article}
+%\usepackage{epsf}
+\usepackage{epsfig}
+
+%\usepackage{alg,alg2}
+%\input{psfig.sty}
+
+%\input{preamble-isca}
+%\setcounter{secnumdepth}{4}
+
+\textheight 9in         % 1in top and bottom margin
+\textwidth 6.5in        % 1in left and right margin
+
+\oddsidemargin 0in      % Both side margins are now 1in
+\evensidemargin 0in \topmargin -0.5 in
+
+% The header goes .5in from top of the page and from the text.
+
+\begin{document}
+
+\normalsize
+\bibliographystyle{plain}
+
+
+\clearpage
+\pagenumbering{arabic}
+
+\title{Preliminary report on EAGER-1049758: 
+\\Investigating Network Testbed Usage}
+\author{Jelena Mirkovic and Alefiya Hussain \\
+USC/ISI\\
+\{sunshine,hussain\}@isi.edu
+}
+
+\maketitle
+
+\section*{Introduction}
+This is a preliminary report on our findings from investigating testbed usage pattern. 
+Most of our conclusions at this point come from investigating the DETER
+ testbed data~\cite{Deter}. 
+We are in the process of obtaining and analyzing data 
+ from other testbeds and this will be completed by the end of our grant.
+
+We have started to analyze the data along several dimensions, 
+specifically to answer the following questions about testbeds:  
+\begin{enumerate} 
+\item Do testbeds help people conduct useful research?
+\item What aspects of testbeds hinder their wider use?
+\item Can testbed use/management policies be improved and how?
+\end{enumerate}
+Most of the findings reported here relate to questions 1 and 3. Unfortunately testbeds today
+do not collect enough data nor do they collect the right data to answer the above questions
+conclusively so we are often forced to draw bold conclusions based on our interpretation of the
+existing, limited data.
+
+We observe that there are three primary types of experimentation patterns 
+ on testbeds today: (a) {\bf Hypothesis Validation} where the experimenter
+ rigorously explores the parameter space to validate 
+  a particular hypothesis. 
+(b) {\bf Deployment Study} where the experimenter 
+ installs new technology to study its impact and/or to test it out
+(c) {\bf Exploration} where the experimenter takes 
+ unknown technology and immerses it into the testbed to study it further.
+
+In the subsequent sections, we have classified 
+ all three cases of experimentation patterns as 
+{\it research} experiments. 
+Additionally, we have {\it class} experiments
+ on DETER, that are instantiated due to use of DETER in graduate and undergraduate
+ security courses across 22 universities world-wide. 
+(A complete list of academic institutions that use DETER in classes is attached as 
+Appendix A.)
+
+ 
+\subsection*{Experiment Duration}
+ {\it Experiment duration} is defined 
+ as the time lapse between
+  when an experiment is allocated 
+   testbed resources 
+ to when the experiment releases
+  the assigned resources.
+Figure~\ref{expdur} shows the \textit{cummulative distribution function (cdf)} of
+ duration for our two 
+  experiment categories, research and class
+   experiments. 
+Since each allocation is plotted as an 
+ independent event, the same experiment (identified by its name) can generate multiple
+ points in Figure~\ref{expdur} if it allocated and released resources multiple times in the course
+ of its lifetime.
+Research experiment duration is heavy-tailed with 26\% of experiments
+lasting less than 15 minutes, 51\% lasting less than 1.5 h and 90\%
+lasting less than a day. But a few experiments last more than a year. 
+Class experiment duration is also heavy tailed but longer experiments
+dominate more: only less than 7\% last less than 15 minutes, 35\% last
+less than 1.5 h and 96\% last less than a day. Longest class experiments
+last for a few weeks. We attribute this longer duration of class
+experiments when compared with research experiments to the fact that
+class experiments are usually well specified in advance by the class
+instructor. Class users can thus just allocate resources for the experiment and do
+useful work, while research users may need several trial resource
+allocations while they test out their set up and discover the combination
+that best works for their research purpose.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=5in]{data/edur.pdf}
+\caption{Experiment duration for research and class experiments}
+\label{expdur}
+\end{center}
+\end{figure}
+
+
+\subsection*{Experiment Lifetime}
+{\it Experiment Lifetime} is defined as 
+ time lapse between the first experiment creation
+event to the last experiment deallocation event. 
+Thus each unique experiment is only represented by one point in 
+Figure~\ref{explife}. 
+Research experiment life is heavy-tailed with almost
+51\% of experiments lasting less than 10 minutes. Conversely, only 1.4\%
+of class experiments last less than 10 minutes. To verify our hypothesis
+that short research experiment life is due to users trying to determine
+the best setting for their purpose we examined the percentage of short
+experiments that are followed by longer experiments in the same project.
+If we define "short" as lasting 10 minutes or less  3,676 out of 3,682
+(or 99\%) short research experiments are followed by a longer experiment
+in the same project. Similarly, we investigated how many short
+experiments are preceded by a long experiment, hypothesizing that this
+is due to the user perfecting their scripts and automating the
+experiment so that it can run under 10 minutes. This time  3,678 out of
+3,682 (or 99\%) short research experiments were preceded by a longer
+experiment. We conclude that short research experiments occur often in
+the middle of experimentation stream when users want to either
+investigate new setup or they have sufficiently automated their
+experiments that they can finish quickly.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=5in]{data/elife.pdf}
+\caption{Experiment life for research and class experiments}
+\label{explife}
+\end{center}
+\end{figure}
+
+
+\subsection*{Experiment Size} 
+Figure \ref{expsize} shows experiment size in number of nodes for class
+and research experiments. Since experiment size can be changed during
+its lifetime, we plot each value as a new data point in the graph. We
+notice that a large percentage of experiments is small. 6\% of research
+and 27\% of class experiments require only 1 node, 77\% of research
+experiments and 97\% of class experiments require less than 10 nodes.
+But the distributions are heavy tailed with a few experiments requiring
+$>$ 100 nodes (research) and $>$ 10 nodes (class). Coupled with
+experiment duration data, this points to the fact that most testbed
+experiments are short and small and may have implications if testbeds
+were to implement more advanced resource scheduling algorithms than the
+currently used first-come-first-served approach.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=5in]{data/esize.pdf}
+\caption{Experiment size for research and class experiments}
+\label{expsize}
+\end{center}
+\end{figure}
+
+\subsection*{Project Size}
+Figure~\ref{projsize} shows the project size in number of unique
+experiments (one experiment can be allocated resources multiple times but it
+still accounts for only one data point) for class and research projects.
+We notice that most projects have a small number of experiments: 56\% of
+research projects have less than 10 experiments and 23\% of class
+projects have less than 10 experiments. Again this distribution is
+heavy-tailed with a few projects generating hundreds of experiments.
+Distributions of the number of allocations per project (Figure
+\ref{projswap} exhibit are similarly heavy-tailed.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=5in]{data/psize.pdf}
+\caption{Project size in number of experiments}
+\label{projsize}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=5in]{data/pswaps.pdf}
+\caption{Project resource allocations}
+\label{projswap}
+\end{center}
+\end{figure}
+
+
+\subsection*{Project Lifetime}
+Figure \ref{projlife} shows the distribution of project lifetime,
+from the first to the last event (experiment creation, resource allocation, resource release, modification). We notice that the smallest lifetime is 46 days,
+with more than half of the research projects being active for more than
+2.5 years and one third of class projects being active for more than a
+year. Coupled with project activity data such as number of experiments
+and number of resource allocation, and with experiment activity data such as
+duration this shows that people use testbeds in multiple short visits
+spread over a long time period.
+
+Additionally, we found that
+ a significant number of projects are created but never used,  that is, 
+  not a single experiment is created within these projects. 
+The percentages are: 24\% for DETER~\cite{Deter}, 24\% for Emulab~\cite{Emulab} 
+ and 11\% for Schooner-WAIL testbeds~\cite{Wail}. 
+We contacted the PIs of these unused DETER projects to understand their reasons for not using the 
+ testbed and the responses we received can be broadly classified as: 
+\begin{enumerate}
+\item Found that simulation or live deployment are better fit with my research, 
+\item Couldn't find sponsors or students for the project
+\item Expected there was some specific software or hardware in the testbed, which proved wrong, and
+\item Didn't really need to create experiments since the goal was simply to learn how to make a testbed on our own
+\end{enumerate}
+We are still investigating root causes of this phenomenon but the fact
+that we observe these trends across very different testbeds points to the fact that
+testbeds need better experimentation tools to eliminate many
+cases under (1) and (3) categories. Having an ability to retire and resurrect projects would help 
+better accounting by eliminating projects in (2) category and having a special project type for 
+people that seek to build testbeds would eliminate projects in (4) category.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=5in]{data/plife.pdf}
+\caption{Project lifetime}
+\label{projlife}
+\end{center}
+\end{figure}
+
+
+\subsection*{User Activity Patterns}
+We define an "active" user as a user that has manipulated (created,
+allocated, released, modified) an experiment within a project that
+he belongs to. Figure \ref{active} plots the percentage of active users
+in a project against the number of project members for research and
+class projects. We notice that for small projects ($<$10 members for
+research projects and $<$ 50 members for classes) percentage of active
+users varies widely. The lowest percentage of active research users is
+20\% while it is 3\% for class users. For large projects, however, a
+large percentage of users is active. This effect is counterintuitive and
+requires further investigation.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=5in]{5.pdf}
+\includegraphics[width=5in]{4.pdf}
+\caption{Percentage of active vs all project members for research projects 
+ (top) and class projects (bottom)}
+\label{active}
+\end{center}
+\end{figure}
+
+Additionally, we found 
+ some number of users never manipulate 
+  (create, allocate or release resources, modify) an experiment .
+The percentages are: 10\% for DETER and 15\% for Schooner-WAIL. 
+Closer investigation shows three causes of such behavior:
+\begin{enumerate}
+\item Users tend to open duplicate accounts if they forget their password and 
+ can't retrieve it the regular way or if they change institution affiliation
+\item PIs tend to create projects but do not manipulate experiments -- their students/employees do
+\item Students in class projects may work with an experiment already 
+ set up by the instructor or TA
+\end{enumerate}
+Cause (1) is preventable with better account management from testbed ops. Cause (2) can be easily identified and corresponding user records taken out of the statistics. Testbeds need better accounting to detect behavior due to cause (3). 
+
+\subsection*{Testbed Usage in Classes}
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=6in]{data/sigedu/1.pdf}
+\includegraphics[width=6in]{data/sigedu/2.pdf}
+\caption{Resource usage per class}
+\label{cluse}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=5in]{data/sigedu/3.pdf}
+\caption{Resource usage in the testbed}
+\label{alluse}
+\end{center}
+\end{figure}
+
+Past few semesters have brought a large increase in the class usage of
+DETER testbed. This prompted us to implement a few administrative
+polices to ensure that our resources are divided fairly between classes,
+and that class usage does not compromise our research usage. These
+policies were first enforced in Fall 2010.
+
+We ask instructors at the start of the semester to email us a schedule
+of their planned DETER exercises: start time, submission deadline and
+the maximum number of machines the class may need assuming the worst
+case when all students work simultaneously. This data is input into an
+online document, shared via Google docs with all class instructors (with
+edit access) for that semester. Each week we impose a resource limit on
+each class according to this online schedule, which equals 2/3 of the
+anticipated demand recorded in the schedule. This ensures to some extent that no class can starve
+other classes for resources. Additionally we make sure that the sum of
+all class limits for the week does not exceed 2/3 of all testbed
+resources. This ensures that some resources remain available for our
+research users.
+
+In Fall 2010 there were ten courses that used DETER testbed, ranging in
+enrollment from 100 students to 10 students. Figure \ref{cluse} plots
+number of machines used by each class, and the resource limits set on
+the course (2/3 of the maximum resource demand in a given week). If the
+instructor provided no demand for some week (e.g., no exercise was
+planned then) there was no limit set. Graph legend shows the institution
+name and the class size. We notice two trends from these graphs. First,
+larger classes tend to request more resources but underutilize them,
+frequently staying well below their set limits, while smaller classes
+tend to bump often against their limits. We attribute this effect to
+greater multiplexing in a larger class, which ensures that resources are
+used in a more uniform manner. The second effect we noticed is that
+classes tend to use resources outside of their planned intervals. It is
+possible that this is due to instructors moving exercise deadlines
+without updating our online schedule. Another possibility is that this
+is due to instructors setting up exercises prior to assigning them to
+students. Both these effects merit further investigation and fine-tuning
+of our policies to better match observed usage patterns.
+
+Figure \ref{alluse} plots number of machines used by all classes and the
+total number of machines used in DETER over the course of Fall 2010
+semester. It also shows the aggregate resource limit of 2/3 of DETER
+resources that is set over the class demand. We observe that class usage
+stays well below this imposed limit. We also observe that this is not
+due to lack of testbed resources -- in all cases there were free
+resources in the testbed that may have been allocated to classes since
+total utilization stayed below 80\%. This observed effect may be due to
+instructors overestimating their resource needs but it may also be due
+to us setting too strict limits on some classes (i.e. those that tend to
+bump against them often from Figure \ref{cluse}) that force them to wait for
+resources even when there are free machines in the testbed.
+
+We draw three conclusions from these observations. First, 2/3 aggregate
+limit on class resources can be relaxed or at least can be enforced only
+when testbed resources are running low instead of all the time. Second,
+we need a better approach to ensure fairness of resource allocation
+between courses since obviously some courses need more and some need
+less resources than their instructors originally estimate. Third, we
+need a better resource allocation policy that ensures that a course is
+only denied resources when there is real and not just possible resource
+shortage.
+
+
+\section{Appendix A: Institutions that use DETER in class}
+
+\begin{enumerate}
+\item UC Berkeley
+\item University of Southern California
+\item Stevens Institute of Technology
+\item UC Los Angeles
+\item Lehigh University
+\item Jordan University of Science and Technology, Jordan
+\item Colorado State University
+\item IIT Delhi, India
+\item Sao Paulo State University, Brazil
+\item Youngstown State University
+\item University of Nebraska - Lincoln
+\item San Jose State University
+\item Vanderbilt University
+\item University of Portland
+\item Johns Hopkins University
+\item George Mason University
+\item Saint Louis University
+\item Radford University
+\item University of Memphis
+\item NYU Polytechnic Institute
+\item Southern Illinois University at Edwardsville
+\item Bar Ilan University, Israel
+\end{enumerate}
+\bibliography{nsfreport}
+
+\end{document}

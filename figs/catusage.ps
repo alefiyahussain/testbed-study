@@ -1,0 +1,6797 @@
+%!PS-Adobe-2.0
+%%Title: figs/catusage.ps
+%%Creator: gnuplot 4.5 patchlevel 0
+%%CreationDate: Thu May  5 11:17:11 2011
+%%DocumentFonts: (atend)
+%%BoundingBox: 50 50 554 770
+%%Orientation: Landscape
+%%Pages: (atend)
+%%EndComments
+%%BeginProlog
+/gnudict 256 dict def
+gnudict begin
+%
+% The following true/false flags may be edited by hand if desired.
+% The unit line width and grayscale image gamma correction may also be changed.
+%
+/Color true def
+/Blacktext false def
+/Solid false def
+/Dashlength 1 def
+/Landscape true def
+/Level1 false def
+/Rounded false def
+/ClipToBoundingBox false def
+/SuppressPDFMark false def
+/TransparentPatterns false def
+/gnulinewidth 5.000 def
+/userlinewidth gnulinewidth def
+/Gamma 1.0 def
+%
+/vshift -46 def
+/dl1 {
+  10.0 Dashlength mul mul
+  Rounded { currentlinewidth 0.75 mul sub dup 0 le { pop 0.01 } if } if
+} def
+/dl2 {
+  10.0 Dashlength mul mul
+  Rounded { currentlinewidth 0.75 mul add } if
+} def
+/hpt_ 31.5 def
+/vpt_ 31.5 def
+/hpt hpt_ def
+/vpt vpt_ def
+/doclip {
+  ClipToBoundingBox {
+    newpath 50 50 moveto 554 50 lineto 554 770 lineto 50 770 lineto closepath
+    clip
+  } if
+} def
+%
+% Gnuplot Prolog Version 4.4 (August 2010)
+%
+%/SuppressPDFMark true def
+%
+/M {moveto} bind def
+/L {lineto} bind def
+/R {rmoveto} bind def
+/V {rlineto} bind def
+/N {newpath moveto} bind def
+/Z {closepath} bind def
+/C {setrgbcolor} bind def
+/f {rlineto fill} bind def
+/g {setgray} bind def
+/Gshow {show} def   % May be redefined later in the file to support UTF-8
+/vpt2 vpt 2 mul def
+/hpt2 hpt 2 mul def
+/Lshow {currentpoint stroke M 0 vshift R 
+	Blacktext {gsave 0 setgray show grestore} {show} ifelse} def
+/Rshow {currentpoint stroke M dup stringwidth pop neg vshift R
+	Blacktext {gsave 0 setgray show grestore} {show} ifelse} def
+/Cshow {currentpoint stroke M dup stringwidth pop -2 div vshift R 
+	Blacktext {gsave 0 setgray show grestore} {show} ifelse} def
+/UP {dup vpt_ mul /vpt exch def hpt_ mul /hpt exch def
+  /hpt2 hpt 2 mul def /vpt2 vpt 2 mul def} def
+/DL {Color {setrgbcolor Solid {pop []} if 0 setdash}
+ {pop pop pop 0 setgray Solid {pop []} if 0 setdash} ifelse} def
+/BL {stroke userlinewidth 2 mul setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/AL {stroke userlinewidth 2 div setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/UL {dup gnulinewidth mul /userlinewidth exch def
+	dup 1 lt {pop 1} if 10 mul /udl exch def} def
+/PL {stroke userlinewidth setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+3.8 setmiterlimit
+% Default Line colors
+/LCw {1 1 1} def
+/LCb {0 0 0} def
+/LCa {0 0 0} def
+/LC0 {1 0 0} def
+/LC1 {0 1 0} def
+/LC2 {0 0 1} def
+/LC3 {1 0 1} def
+/LC4 {0 1 1} def
+/LC5 {1 1 0} def
+/LC6 {0 0 0} def
+/LC7 {1 0.3 0} def
+/LC8 {0.5 0.5 0.5} def
+% Default Line Types
+/LTw {PL [] 1 setgray} def
+/LTb {BL [] LCb DL} def
+/LTa {AL [1 udl mul 2 udl mul] 0 setdash LCa setrgbcolor} def
+/LT0 {PL [] LC0 DL} def
+/LT1 {PL [4 dl1 2 dl2] LC1 DL} def
+/LT2 {PL [2 dl1 3 dl2] LC2 DL} def
+/LT3 {PL [1 dl1 1.5 dl2] LC3 DL} def
+/LT4 {PL [6 dl1 2 dl2 1 dl1 2 dl2] LC4 DL} def
+/LT5 {PL [3 dl1 3 dl2 1 dl1 3 dl2] LC5 DL} def
+/LT6 {PL [2 dl1 2 dl2 2 dl1 6 dl2] LC6 DL} def
+/LT7 {PL [1 dl1 2 dl2 6 dl1 2 dl2 1 dl1 2 dl2] LC7 DL} def
+/LT8 {PL [2 dl1 2 dl2 2 dl1 2 dl2 2 dl1 2 dl2 2 dl1 4 dl2] LC8 DL} def
+/Pnt {stroke [] 0 setdash gsave 1 setlinecap M 0 0 V stroke grestore} def
+/Dia {stroke [] 0 setdash 2 copy vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke
+  Pnt} def
+/Pls {stroke [] 0 setdash vpt sub M 0 vpt2 V
+  currentpoint stroke M
+  hpt neg vpt neg R hpt2 0 V stroke
+ } def
+/Box {stroke [] 0 setdash 2 copy exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke
+  Pnt} def
+/Crs {stroke [] 0 setdash exch hpt sub exch vpt add M
+  hpt2 vpt2 neg V currentpoint stroke M
+  hpt2 neg 0 R hpt2 vpt2 V stroke} def
+/TriU {stroke [] 0 setdash 2 copy vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke
+  Pnt} def
+/Star {2 copy Pls Crs} def
+/BoxF {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath fill} def
+/TriUF {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath fill} def
+/TriD {stroke [] 0 setdash 2 copy vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke
+  Pnt} def
+/TriDF {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath fill} def
+/DiaF {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath fill} def
+/Pent {stroke [] 0 setdash 2 copy gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore Pnt} def
+/PentF {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath fill grestore} def
+/Circle {stroke [] 0 setdash 2 copy
+  hpt 0 360 arc stroke Pnt} def
+/CircleF {stroke [] 0 setdash hpt 0 360 arc fill} def
+/C0 {BL [] 0 setdash 2 copy moveto vpt 90 450 arc} bind def
+/C1 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C2 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C3 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C4 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C5 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc
+	2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc} bind def
+/C6 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C7 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C8 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C9 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 450 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C10 {BL [] 0 setdash 2 copy 2 copy moveto vpt 270 360 arc closepath fill
+	2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C11 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C12 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C13 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C14 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 360 arc closepath fill
+	vpt 0 360 arc} bind def
+/C15 {BL [] 0 setdash 2 copy vpt 0 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/Rec {newpath 4 2 roll moveto 1 index 0 rlineto 0 exch rlineto
+	neg 0 rlineto closepath} bind def
+/Square {dup Rec} bind def
+/Bsquare {vpt sub exch vpt sub exch vpt2 Square} bind def
+/S0 {BL [] 0 setdash 2 copy moveto 0 vpt rlineto BL Bsquare} bind def
+/S1 {BL [] 0 setdash 2 copy vpt Square fill Bsquare} bind def
+/S2 {BL [] 0 setdash 2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S3 {BL [] 0 setdash 2 copy exch vpt sub exch vpt2 vpt Rec fill Bsquare} bind def
+/S4 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S5 {BL [] 0 setdash 2 copy 2 copy vpt Square fill
+	exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S6 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S7 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S8 {BL [] 0 setdash 2 copy vpt sub vpt Square fill Bsquare} bind def
+/S9 {BL [] 0 setdash 2 copy vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S10 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt Square fill
+	Bsquare} bind def
+/S11 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt2 vpt Rec fill
+	Bsquare} bind def
+/S12 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill Bsquare} bind def
+/S13 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S14 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S15 {BL [] 0 setdash 2 copy Bsquare fill Bsquare} bind def
+/D0 {gsave translate 45 rotate 0 0 S0 stroke grestore} bind def
+/D1 {gsave translate 45 rotate 0 0 S1 stroke grestore} bind def
+/D2 {gsave translate 45 rotate 0 0 S2 stroke grestore} bind def
+/D3 {gsave translate 45 rotate 0 0 S3 stroke grestore} bind def
+/D4 {gsave translate 45 rotate 0 0 S4 stroke grestore} bind def
+/D5 {gsave translate 45 rotate 0 0 S5 stroke grestore} bind def
+/D6 {gsave translate 45 rotate 0 0 S6 stroke grestore} bind def
+/D7 {gsave translate 45 rotate 0 0 S7 stroke grestore} bind def
+/D8 {gsave translate 45 rotate 0 0 S8 stroke grestore} bind def
+/D9 {gsave translate 45 rotate 0 0 S9 stroke grestore} bind def
+/D10 {gsave translate 45 rotate 0 0 S10 stroke grestore} bind def
+/D11 {gsave translate 45 rotate 0 0 S11 stroke grestore} bind def
+/D12 {gsave translate 45 rotate 0 0 S12 stroke grestore} bind def
+/D13 {gsave translate 45 rotate 0 0 S13 stroke grestore} bind def
+/D14 {gsave translate 45 rotate 0 0 S14 stroke grestore} bind def
+/D15 {gsave translate 45 rotate 0 0 S15 stroke grestore} bind def
+/DiaE {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke} def
+/BoxE {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke} def
+/TriUE {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke} def
+/TriDE {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke} def
+/PentE {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore} def
+/CircE {stroke [] 0 setdash 
+  hpt 0 360 arc stroke} def
+/Opaque {gsave closepath 1 setgray fill grestore 0 setgray closepath} def
+/DiaW {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V Opaque stroke} def
+/BoxW {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V Opaque stroke} def
+/TriUW {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V Opaque stroke} def
+/TriDW {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V Opaque stroke} def
+/PentW {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  Opaque stroke grestore} def
+/CircW {stroke [] 0 setdash 
+  hpt 0 360 arc Opaque stroke} def
+/BoxFill {gsave Rec 1 setgray fill grestore} def
+/Density {
+  /Fillden exch def
+  currentrgbcolor
+  /ColB exch def /ColG exch def /ColR exch def
+  /ColR ColR Fillden mul Fillden sub 1 add def
+  /ColG ColG Fillden mul Fillden sub 1 add def
+  /ColB ColB Fillden mul Fillden sub 1 add def
+  ColR ColG ColB setrgbcolor} def
+/BoxColFill {gsave Rec PolyFill} def
+/PolyFill {gsave Density fill grestore grestore} def
+/h {rlineto rlineto rlineto gsave closepath fill grestore} bind def
+%
+% PostScript Level 1 Pattern Fill routine for rectangles
+% Usage: x y w h s a XX PatternFill
+%	x,y = lower left corner of box to be filled
+%	w,h = width and height of box
+%	  a = angle in degrees between lines and x-axis
+%	 XX = 0/1 for no/yes cross-hatch
+%
+/PatternFill {gsave /PFa [ 9 2 roll ] def
+  PFa 0 get PFa 2 get 2 div add PFa 1 get PFa 3 get 2 div add translate
+  PFa 2 get -2 div PFa 3 get -2 div PFa 2 get PFa 3 get Rec
+  gsave 1 setgray fill grestore clip
+  currentlinewidth 0.5 mul setlinewidth
+  /PFs PFa 2 get dup mul PFa 3 get dup mul add sqrt def
+  0 0 M PFa 5 get rotate PFs -2 div dup translate
+  0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 M 0 PFs V} for
+  0 PFa 6 get ne {
+	0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 2 1 roll M PFs 0 V} for
+ } if
+  stroke grestore} def
+%
+/languagelevel where
+ {pop languagelevel} {1} ifelse
+ 2 lt
+	{/InterpretLevel1 true def}
+	{/InterpretLevel1 Level1 def}
+ ifelse
+%
+% PostScript level 2 pattern fill definitions
+%
+/Level2PatternFill {
+/Tile8x8 {/PaintType 2 /PatternType 1 /TilingType 1 /BBox [0 0 8 8] /XStep 8 /YStep 8}
+	bind def
+/KeepColor {currentrgbcolor [/Pattern /DeviceRGB] setcolorspace} bind def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke} 
+>> matrix makepattern
+/Pat1 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke
+	0 4 M 4 8 L 8 4 L 4 0 L 0 4 L stroke}
+>> matrix makepattern
+/Pat2 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 0 8 L
+	8 8 L 8 0 L 0 0 L fill}
+>> matrix makepattern
+/Pat3 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 8 M 8 -4 L
+	0 12 M 12 0 L stroke}
+>> matrix makepattern
+/Pat4 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 0 M 8 12 L
+	0 -4 M 12 8 L stroke}
+>> matrix makepattern
+/Pat5 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 8 M 4 -4 L
+	0 12 M 8 -4 L 4 12 M 10 0 L stroke}
+>> matrix makepattern
+/Pat6 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 0 M 4 12 L
+	0 -4 M 8 12 L 4 -4 M 10 8 L stroke}
+>> matrix makepattern
+/Pat7 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 8 -2 M -4 4 L
+	12 0 M -4 8 L 12 4 M 0 10 L stroke}
+>> matrix makepattern
+/Pat8 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 -2 M 12 4 L
+	-4 0 M 12 8 L -4 4 M 8 10 L stroke}
+>> matrix makepattern
+/Pat9 exch def
+/Pattern1 {PatternBgnd KeepColor Pat1 setpattern} bind def
+/Pattern2 {PatternBgnd KeepColor Pat2 setpattern} bind def
+/Pattern3 {PatternBgnd KeepColor Pat3 setpattern} bind def
+/Pattern4 {PatternBgnd KeepColor Landscape {Pat5} {Pat4} ifelse setpattern} bind def
+/Pattern5 {PatternBgnd KeepColor Landscape {Pat4} {Pat5} ifelse setpattern} bind def
+/Pattern6 {PatternBgnd KeepColor Landscape {Pat9} {Pat6} ifelse setpattern} bind def
+/Pattern7 {PatternBgnd KeepColor Landscape {Pat8} {Pat7} ifelse setpattern} bind def
+} def
+%
+%
+%End of PostScript Level 2 code
+%
+/PatternBgnd {
+  TransparentPatterns {} {gsave 1 setgray fill grestore} ifelse
+} def
+%
+% Substitute for Level 2 pattern fill codes with
+% grayscale if Level 2 support is not selected.
+%
+/Level1PatternFill {
+/Pattern1 {0.250 Density} bind def
+/Pattern2 {0.500 Density} bind def
+/Pattern3 {0.750 Density} bind def
+/Pattern4 {0.125 Density} bind def
+/Pattern5 {0.375 Density} bind def
+/Pattern6 {0.625 Density} bind def
+/Pattern7 {0.875 Density} bind def
+} def
+%
+% Now test for support of Level 2 code
+%
+Level1 {Level1PatternFill} {Level2PatternFill} ifelse
+%
+/Symbol-Oblique /Symbol findfont [1 0 .167 1 0 0] makefont
+dup length dict begin {1 index /FID eq {pop pop} {def} ifelse} forall
+currentdict end definefont pop
+/MFshow {
+   { dup 5 get 3 ge
+     { 5 get 3 eq {gsave} {grestore} ifelse }
+     {dup dup 0 get findfont exch 1 get scalefont setfont
+     [ currentpoint ] exch dup 2 get 0 exch R dup 5 get 2 ne {dup dup 6
+     get exch 4 get {Gshow} {stringwidth pop 0 R} ifelse }if dup 5 get 0 eq
+     {dup 3 get {2 get neg 0 exch R pop} {pop aload pop M} ifelse} {dup 5
+     get 1 eq {dup 2 get exch dup 3 get exch 6 get stringwidth pop -2 div
+     dup 0 R} {dup 6 get stringwidth pop -2 div 0 R 6 get
+     show 2 index {aload pop M neg 3 -1 roll neg R pop pop} {pop pop pop
+     pop aload pop M} ifelse }ifelse }ifelse }
+     ifelse }
+   forall} def
+/Gswidth {dup type /stringtype eq {stringwidth} {pop (n) stringwidth} ifelse} def
+/MFwidth {0 exch { dup 5 get 3 ge { 5 get 3 eq { 0 } { pop } ifelse }
+ {dup 3 get{dup dup 0 get findfont exch 1 get scalefont setfont
+     6 get Gswidth pop add} {pop} ifelse} ifelse} forall} def
+/MLshow { currentpoint stroke M
+  0 exch R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/MRshow { currentpoint stroke M
+  exch dup MFwidth neg 3 -1 roll R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/MCshow { currentpoint stroke M
+  exch dup MFwidth -2 div 3 -1 roll R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/XYsave    { [( ) 1 2 true false 3 ()] } bind def
+/XYrestore { [( ) 1 2 true false 4 ()] } bind def
+Level1 SuppressPDFMark or 
+{} {
+/SDict 10 dict def
+systemdict /pdfmark known not {
+  userdict /pdfmark systemdict /cleartomark get put
+} if
+SDict begin [
+  /Title (figs/catusage.ps)
+  /Subject (gnuplot plot)
+  /Creator (gnuplot 4.5 patchlevel 0)
+  /Author (mirkovic)
+%  /Producer (gnuplot)
+%  /Keywords ()
+  /CreationDate (Thu May  5 11:17:11 2011)
+  /DOCINFO pdfmark
+end
+} ifelse
+end
+%%EndProlog
+%%Page: 1 1
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.100 0.100 scale
+90 rotate
+0 -5040 translate
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+1.000 UL
+LTb
+882 496 M
+63 0 V
+4259 0 R
+-63 0 V
+stroke
+798 496 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 0)]
+] -46.7 MRshow
+1.000 UL
+LTb
+882 1121 M
+63 0 V
+4259 0 R
+-63 0 V
+stroke
+798 1121 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 2e+08)]
+] -46.7 MRshow
+1.000 UL
+LTb
+882 1746 M
+63 0 V
+4259 0 R
+-63 0 V
+stroke
+798 1746 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 4e+08)]
+] -46.7 MRshow
+1.000 UL
+LTb
+882 2371 M
+63 0 V
+4259 0 R
+-63 0 V
+stroke
+798 2371 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 6e+08)]
+] -46.7 MRshow
+1.000 UL
+LTb
+882 2996 M
+63 0 V
+4259 0 R
+-63 0 V
+stroke
+798 2996 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 8e+08)]
+] -46.7 MRshow
+1.000 UL
+LTb
+882 3621 M
+63 0 V
+4259 0 R
+-63 0 V
+stroke
+798 3621 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 1e+09)]
+] -46.7 MRshow
+1.000 UL
+LTb
+882 4246 M
+63 0 V
+4259 0 R
+-63 0 V
+stroke
+798 4246 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 1.2e+09)]
+] -46.7 MRshow
+1.000 UL
+LTb
+882 4871 M
+63 0 V
+4259 0 R
+-63 0 V
+stroke
+798 4871 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 1.4e+09)]
+] -46.7 MRshow
+1.000 UL
+LTb
+1026 496 M
+stroke
+1026 412 M
+currentpoint gsave translate -45 rotate 0 0 moveto
+[ [(Helvetica) 140.0 0.0 true true 0 (0)]
+] -46.7 MLshow
+grestore
+1.000 UL
+LTb
+1170 496 M
+stroke
+1170 412 M
+currentpoint gsave translate -45 rotate 0 0 moveto
+[ [(Helvetica) 140.0 0.0 true true 0 (6/2004)]
+] -46.7 MLshow
+grestore
+1.000 UL
+LTb
+1314 496 M
+stroke
+1314 412 M
+currentpoint gsave translate -45 rotate 0 0 moveto
+[ [(Helvetica) 140.0 0.0 true true 0 (9/2004)]
+] -46.7 MLshow
+grestore
+1.000 UL
+LTb
+1458 496 M
+stroke
+1458 412 M
+currentpoint gsave translate -45 rotate 0 0 moveto
+[ [(Helvetica) 140.0 0.0 true true 0 (0/2005)]
+] -46.7 MLshow
+grestore
+1.000 UL
+LTb
+1602 496 M
+stroke
+1602 412 M
+currentpoint gsave translate -45 rotate 0 0 moveto
+[ [(Helvetica) 140.0 0.0 true true 0 (3/2005)]
+] -46.7 MLshow
+grestore
+1.000 UL
+LTb
+1746 496 M
+stroke
+1746 412 M
+currentpoint gsave translate -45 rotate 0 0 moveto
+[ [(Helvetica) 140.0 0.0 true true 0 (6/2005)]
+] -46.7 MLshow
+grestore
+1.000 UL
+LTb
+1890 496 M
+stroke
+1890 412 M
+currentpoint gsave translate -45 rotate 0 0 moveto
+[ [(Helvetica) 140.0 0.0 true true 0 (9/2005)]
+] -46.7 MLshow
+grestore
+1.000 UL
+LTb
+2035 496 M
+stroke
+2035 412 M
+currentpoint gsave translate -45 rotate 0 0 moveto
+[ [(Helvetica) 140.0 0.0 true true 0 (0/2006)]
+] -46.7 MLshow
+grestore
+1.000 UL
+LTb
+2179 496 M
+stroke
+2179 412 M
+currentpoint gsave translate -45 rotate 0 0 moveto
+[ [(Helvetica) 140.0 0.0 true true 0 (3/2006)]
+] -46.7 MLshow
+grestore
+1.000 UL
+LTb
+2323 496 M
+stroke
+2323 412 M
+currentpoint gsave translate -45 rotate 0 0 moveto
+[ [(Helvetica) 140.0 0.0 true true 0 (6/2006)]
+] -46.7 MLshow
+grestore
+1.000 UL
+LTb
+2467 496 M
+stroke
+2467 412 M
+currentpoint gsave translate -45 rotate 0 0 moveto
+[ [(Helvetica) 140.0 0.0 true true 0 (9/2006)]
+] -46.7 MLshow
+grestore
+1.000 UL
+LTb
+2611 496 M
+stroke
+2611 412 M
+currentpoint gsave translate -45 rotate 0 0 moveto
+[ [(Helvetica) 140.0 0.0 true true 0 (0/2007)]
+] -46.7 MLshow
+grestore
+1.000 UL
+LTb
+2755 496 M
+stroke
+2755 412 M
+currentpoint gsave translate -45 rotate 0 0 moveto
+[ [(Helvetica) 140.0 0.0 true true 0 (3/2007)]
+] -46.7 MLshow
+grestore
+1.000 UL
+LTb
+2899 496 M
+stroke
+2899 412 M
+currentpoint gsave translate -45 rotate 0 0 moveto
+[ [(Helvetica) 140.0 0.0 true true 0 (6/2007)]
+] -46.7 MLshow
+grestore
+1.000 UL
+LTb
+3043 496 M
+stroke
+3043 412 M
+currentpoint gsave translate -45 rotate 0 0 moveto
+[ [(Helvetica) 140.0 0.0 true true 0 (9/2007)]
+] -46.7 MLshow
+grestore
+1.000 UL
+LTb
+3187 496 M
+stroke
+3187 412 M
+currentpoint gsave translate -45 rotate 0 0 moveto
+[ [(Helvetica) 140.0 0.0 true true 0 (0/2008)]
+] -46.7 MLshow
+grestore
+1.000 UL
+LTb
+3331 496 M
+stroke
+3331 412 M
+currentpoint gsave translate -45 rotate 0 0 moveto
+[ [(Helvetica) 140.0 0.0 true true 0 (3/2008)]
+] -46.7 MLshow
+grestore
+1.000 UL
+LTb
+3475 496 M
+stroke
+3475 412 M
+currentpoint gsave translate -45 rotate 0 0 moveto
+[ [(Helvetica) 140.0 0.0 true true 0 (6/2008)]
+] -46.7 MLshow
+grestore
+1.000 UL
+LTb
+3619 496 M
+stroke
+3619 412 M
+currentpoint gsave translate -45 rotate 0 0 moveto
+[ [(Helvetica) 140.0 0.0 true true 0 (9/2008)]
+] -46.7 MLshow
+grestore
+1.000 UL
+LTb
+3763 496 M
+stroke
+3763 412 M
+currentpoint gsave translate -45 rotate 0 0 moveto
+[ [(Helvetica) 140.0 0.0 true true 0 (0/2009)]
+] -46.7 MLshow
+grestore
+1.000 UL
+LTb
+3907 496 M
+stroke
+3907 412 M
+currentpoint gsave translate -45 rotate 0 0 moveto
+[ [(Helvetica) 140.0 0.0 true true 0 (3/2009)]
+] -46.7 MLshow
+grestore
+1.000 UL
+LTb
+4051 496 M
+stroke
+4051 412 M
+currentpoint gsave translate -45 rotate 0 0 moveto
+[ [(Helvetica) 140.0 0.0 true true 0 (6/2009)]
+] -46.7 MLshow
+grestore
+1.000 UL
+LTb
+4196 496 M
+stroke
+4196 412 M
+currentpoint gsave translate -45 rotate 0 0 moveto
+[ [(Helvetica) 140.0 0.0 true true 0 (9/2009)]
+] -46.7 MLshow
+grestore
+1.000 UL
+LTb
+4340 496 M
+stroke
+4340 412 M
+currentpoint gsave translate -45 rotate 0 0 moveto
+[ [(Helvetica) 140.0 0.0 true true 0 (0/2010)]
+] -46.7 MLshow
+grestore
+1.000 UL
+LTb
+4484 496 M
+stroke
+4484 412 M
+currentpoint gsave translate -45 rotate 0 0 moveto
+[ [(Helvetica) 140.0 0.0 true true 0 (3/2010)]
+] -46.7 MLshow
+grestore
+1.000 UL
+LTb
+4628 496 M
+stroke
+4628 412 M
+currentpoint gsave translate -45 rotate 0 0 moveto
+[ [(Helvetica) 140.0 0.0 true true 0 (6/2010)]
+] -46.7 MLshow
+grestore
+1.000 UL
+LTb
+4772 496 M
+stroke
+4772 412 M
+currentpoint gsave translate -45 rotate 0 0 moveto
+[ [(Helvetica) 140.0 0.0 true true 0 (9/2010)]
+] -46.7 MLshow
+grestore
+1.000 UL
+LTb
+4916 496 M
+stroke
+4916 412 M
+currentpoint gsave translate -45 rotate 0 0 moveto
+[ [(Helvetica) 140.0 0.0 true true 0 (0/2011)]
+] -46.7 MLshow
+grestore
+1.000 UL
+LTb
+5060 496 M
+stroke
+5060 412 M
+currentpoint gsave translate -45 rotate 0 0 moveto
+[ [(Helvetica) 140.0 0.0 true true 0 (3/2011)]
+] -46.7 MLshow
+grestore
+1.000 UL
+LTb
+1.000 UL
+LTb
+882 4871 N
+882 496 L
+4322 0 V
+0 4375 V
+-4322 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+% Begin plot #1
+1.000 UL
+LT0
+LCb setrgbcolor
+5939 1721 M
+[ [(Helvetica) 140.0 0.0 true true 0 (architecture)]
+] -46.7 MLshow
+LT0
+1.000 5456 1686 399 70 BoxColFill
+LCb setrgbcolor
+5456 1686 N
+399 0 V
+0 70 V
+-399 0 V
+0 -70 V
+Z stroke
+LT0
+1.000 2701 496 109 1 BoxColFill
+LCb setrgbcolor
+2701 496 N
+108 0 V
+-108 0 V
+Z stroke
+LT0
+1.000 2989 496 109 9 BoxColFill
+LCb setrgbcolor
+2989 496 N
+0 8 V
+108 0 V
+0 -8 V
+-108 0 V
+Z stroke
+LT0
+1.000 3133 496 109 13 BoxColFill
+LCb setrgbcolor
+3133 496 N
+0 12 V
+108 0 V
+0 -12 V
+-108 0 V
+Z stroke
+LT0
+1.000 3277 496 109 26 BoxColFill
+LCb setrgbcolor
+3277 496 N
+0 25 V
+108 0 V
+0 -25 V
+-108 0 V
+Z stroke
+LT0
+1.000 3421 496 109 120 BoxColFill
+LCb setrgbcolor
+3421 496 N
+0 119 V
+108 0 V
+0 -119 V
+-108 0 V
+Z stroke
+LT0
+1.000 3565 496 109 66 BoxColFill
+LCb setrgbcolor
+3565 496 N
+0 65 V
+108 0 V
+0 -65 V
+-108 0 V
+Z stroke
+LT0
+1.000 3709 496 109 58 BoxColFill
+LCb setrgbcolor
+3709 496 N
+0 57 V
+108 0 V
+0 -57 V
+-108 0 V
+Z stroke
+LT0
+1.000 3853 496 109 10 BoxColFill
+LCb setrgbcolor
+3853 496 N
+0 9 V
+108 0 V
+0 -9 V
+-108 0 V
+Z stroke
+LT0
+1.000 3997 496 109 2 BoxColFill
+LCb setrgbcolor
+3997 496 N
+0 1 V
+108 0 V
+0 -1 V
+-108 0 V
+Z stroke
+LT0
+1.000 4142 496 109 47 BoxColFill
+LCb setrgbcolor
+4142 496 N
+0 46 V
+108 0 V
+0 -46 V
+-108 0 V
+Z stroke
+LT0
+1.000 4286 496 109 294 BoxColFill
+LCb setrgbcolor
+4286 496 N
+0 293 V
+108 0 V
+0 -293 V
+-108 0 V
+Z stroke
+LT0
+1.000 4430 496 109 504 BoxColFill
+LCb setrgbcolor
+4430 496 N
+0 503 V
+108 0 V
+0 -503 V
+-108 0 V
+Z stroke
+LT0
+1.000 4574 496 109 409 BoxColFill
+LCb setrgbcolor
+4574 496 N
+0 408 V
+108 0 V
+0 -408 V
+-108 0 V
+Z stroke
+LT0
+1.000 4718 496 109 538 BoxColFill
+LCb setrgbcolor
+4718 496 N
+0 537 V
+108 0 V
+0 -537 V
+-108 0 V
+Z stroke
+LT0
+1.000 4862 496 109 191 BoxColFill
+LCb setrgbcolor
+4862 496 N
+0 190 V
+108 0 V
+0 -190 V
+-108 0 V
+Z stroke
+LT0
+1.000 5006 496 109 252 BoxColFill
+LCb setrgbcolor
+5006 496 N
+0 251 V
+108 0 V
+0 -251 V
+-108 0 V
+Z stroke
+LT0
+% End plot #1
+% Begin plot #2
+1.000 UL
+LT1
+LCb setrgbcolor
+5939 1861 M
+[ [(Helvetica) 140.0 0.0 true true 0 (botnets)]
+] -46.7 MLshow
+LT1
+1.000 5456 1826 399 70 BoxColFill
+LCb setrgbcolor
+5456 1826 N
+399 0 V
+0 70 V
+-399 0 V
+0 -70 V
+Z stroke
+LT1
+1.000 2413 496 109 1 BoxColFill
+LCb setrgbcolor
+2413 496 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 2701 496 109 1 BoxColFill
+LCb setrgbcolor
+2701 496 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 2989 504 109 1 BoxColFill
+LCb setrgbcolor
+2989 504 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 3133 508 109 1 BoxColFill
+LCb setrgbcolor
+3133 508 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 3277 521 109 1 BoxColFill
+LCb setrgbcolor
+3277 521 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 3421 615 109 1 BoxColFill
+LCb setrgbcolor
+3421 615 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 3565 561 109 1 BoxColFill
+LCb setrgbcolor
+3565 561 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 3709 553 109 3 BoxColFill
+LCb setrgbcolor
+3709 553 N
+0 2 V
+108 0 V
+0 -2 V
+-108 0 V
+Z stroke
+LT1
+1.000 3853 505 109 21 BoxColFill
+LCb setrgbcolor
+3853 505 N
+0 20 V
+108 0 V
+0 -20 V
+-108 0 V
+Z stroke
+LT1
+1.000 3997 497 109 2 BoxColFill
+LCb setrgbcolor
+3997 497 N
+0 1 V
+108 0 V
+0 -1 V
+-108 0 V
+Z stroke
+LT1
+1.000 4142 542 109 1 BoxColFill
+LCb setrgbcolor
+4142 542 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 4286 789 109 2 BoxColFill
+LCb setrgbcolor
+4286 789 N
+0 1 V
+108 0 V
+0 -1 V
+-108 0 V
+Z stroke
+LT1
+1.000 4430 999 109 1 BoxColFill
+LCb setrgbcolor
+4430 999 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 4574 904 109 11 BoxColFill
+LCb setrgbcolor
+4574 904 N
+0 10 V
+108 0 V
+0 -10 V
+-108 0 V
+Z stroke
+LT1
+1.000 4718 1033 109 3 BoxColFill
+LCb setrgbcolor
+4718 1033 N
+0 2 V
+108 0 V
+0 -2 V
+-108 0 V
+Z stroke
+LT1
+1.000 4862 686 109 2 BoxColFill
+LCb setrgbcolor
+4862 686 N
+0 1 V
+108 0 V
+0 -1 V
+-108 0 V
+Z stroke
+LT1
+1.000 5006 747 109 1 BoxColFill
+LCb setrgbcolor
+5006 747 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+% End plot #2
+% Begin plot #3
+1.000 UL
+LT2
+LCb setrgbcolor
+5939 2001 M
+[ [(Helvetica) 140.0 0.0 true true 0 (class)]
+] -46.7 MLshow
+LT2
+1.000 5456 1966 399 70 BoxColFill
+LCb setrgbcolor
+5456 1966 N
+399 0 V
+0 70 V
+-399 0 V
+0 -70 V
+Z stroke
+LT2
+1.000 1981 496 109 44 BoxColFill
+LCb setrgbcolor
+1981 496 N
+0 43 V
+108 0 V
+0 -43 V
+-108 0 V
+Z stroke
+LT2
+1.000 2125 496 109 85 BoxColFill
+LCb setrgbcolor
+2125 496 N
+0 84 V
+108 0 V
+0 -84 V
+-108 0 V
+Z stroke
+LT2
+1.000 2413 496 109 1 BoxColFill
+LCb setrgbcolor
+2413 496 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 2557 496 109 93 BoxColFill
+LCb setrgbcolor
+2557 496 N
+0 92 V
+108 0 V
+0 -92 V
+-108 0 V
+Z stroke
+LT2
+1.000 2701 496 109 1 BoxColFill
+LCb setrgbcolor
+2701 496 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 2989 504 109 7 BoxColFill
+LCb setrgbcolor
+2989 504 N
+0 6 V
+108 0 V
+0 -6 V
+-108 0 V
+Z stroke
+LT2
+1.000 3133 508 109 114 BoxColFill
+LCb setrgbcolor
+3133 508 N
+0 113 V
+108 0 V
+0 -113 V
+-108 0 V
+Z stroke
+LT2
+1.000 3277 521 109 210 BoxColFill
+LCb setrgbcolor
+3277 521 N
+0 209 V
+108 0 V
+0 -209 V
+-108 0 V
+Z stroke
+LT2
+1.000 3421 615 109 42 BoxColFill
+LCb setrgbcolor
+3421 615 N
+0 41 V
+108 0 V
+0 -41 V
+-108 0 V
+Z stroke
+LT2
+1.000 3565 561 109 43 BoxColFill
+LCb setrgbcolor
+3565 561 N
+0 42 V
+108 0 V
+0 -42 V
+-108 0 V
+Z stroke
+LT2
+1.000 3709 555 109 173 BoxColFill
+LCb setrgbcolor
+3709 555 N
+0 172 V
+108 0 V
+0 -172 V
+-108 0 V
+Z stroke
+LT2
+1.000 3853 525 109 35 BoxColFill
+LCb setrgbcolor
+3853 525 N
+0 34 V
+108 0 V
+0 -34 V
+-108 0 V
+Z stroke
+LT2
+1.000 3997 498 109 340 BoxColFill
+LCb setrgbcolor
+3997 498 N
+0 339 V
+108 0 V
+0 -339 V
+-108 0 V
+Z stroke
+LT2
+1.000 4142 542 109 210 BoxColFill
+LCb setrgbcolor
+4142 542 N
+0 209 V
+108 0 V
+0 -209 V
+-108 0 V
+Z stroke
+LT2
+1.000 4286 790 109 611 BoxColFill
+LCb setrgbcolor
+4286 790 N
+0 610 V
+108 0 V
+0 -610 V
+-108 0 V
+Z stroke
+LT2
+1.000 4430 999 109 1100 BoxColFill
+LCb setrgbcolor
+4430 999 N
+0 1099 V
+108 0 V
+0 -1099 V
+-108 0 V
+Z stroke
+LT2
+1.000 4574 914 109 397 BoxColFill
+LCb setrgbcolor
+4574 914 N
+0 396 V
+108 0 V
+0 -396 V
+-108 0 V
+Z stroke
+LT2
+1.000 4718 1035 109 115 BoxColFill
+LCb setrgbcolor
+4718 1035 N
+0 114 V
+108 0 V
+0 -114 V
+-108 0 V
+Z stroke
+LT2
+1.000 4862 687 109 374 BoxColFill
+LCb setrgbcolor
+4862 687 N
+0 373 V
+108 0 V
+0 -373 V
+-108 0 V
+Z stroke
+LT2
+1.000 5006 747 109 865 BoxColFill
+LCb setrgbcolor
+5006 747 N
+0 864 V
+108 0 V
+0 -864 V
+-108 0 V
+Z stroke
+LT2
+% End plot #3
+% Begin plot #4
+1.000 UL
+LT3
+LCb setrgbcolor
+5939 2141 M
+[ [(Helvetica) 140.0 0.0 true true 0 (comprehensive)]
+] -46.7 MLshow
+LT3
+1.000 5456 2106 399 70 BoxColFill
+LCb setrgbcolor
+5456 2106 N
+399 0 V
+0 70 V
+-399 0 V
+0 -70 V
+Z stroke
+LT3
+1.000 972 496 109 4 BoxColFill
+LCb setrgbcolor
+972 496 N
+0 3 V
+108 0 V
+0 -3 V
+-108 0 V
+Z stroke
+LT3
+1.000 1981 539 109 1 BoxColFill
+LCb setrgbcolor
+1981 539 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 2125 580 109 2 BoxColFill
+LCb setrgbcolor
+2125 580 N
+0 1 V
+108 0 V
+0 -1 V
+-108 0 V
+Z stroke
+LT3
+1.000 2413 496 109 31 BoxColFill
+LCb setrgbcolor
+2413 496 N
+0 30 V
+108 0 V
+0 -30 V
+-108 0 V
+Z stroke
+LT3
+1.000 2557 588 109 893 BoxColFill
+LCb setrgbcolor
+2557 588 N
+0 892 V
+108 0 V
+0 -892 V
+-108 0 V
+Z stroke
+LT3
+1.000 2701 496 109 153 BoxColFill
+LCb setrgbcolor
+2701 496 N
+0 152 V
+108 0 V
+0 -152 V
+-108 0 V
+Z stroke
+LT3
+1.000 2845 496 109 433 BoxColFill
+LCb setrgbcolor
+2845 496 N
+0 432 V
+108 0 V
+0 -432 V
+-108 0 V
+Z stroke
+LT3
+1.000 2989 510 109 296 BoxColFill
+LCb setrgbcolor
+2989 510 N
+0 295 V
+108 0 V
+0 -295 V
+-108 0 V
+Z stroke
+LT3
+1.000 3133 621 109 23 BoxColFill
+LCb setrgbcolor
+3133 621 N
+0 22 V
+108 0 V
+0 -22 V
+-108 0 V
+Z stroke
+LT3
+1.000 3277 730 109 51 BoxColFill
+LCb setrgbcolor
+3277 730 N
+0 50 V
+108 0 V
+0 -50 V
+-108 0 V
+Z stroke
+LT3
+1.000 3421 656 109 8 BoxColFill
+LCb setrgbcolor
+3421 656 N
+0 7 V
+108 0 V
+0 -7 V
+-108 0 V
+Z stroke
+LT3
+1.000 3565 603 109 198 BoxColFill
+LCb setrgbcolor
+3565 603 N
+0 197 V
+108 0 V
+0 -197 V
+-108 0 V
+Z stroke
+LT3
+1.000 3709 727 109 89 BoxColFill
+LCb setrgbcolor
+3709 727 N
+0 88 V
+108 0 V
+0 -88 V
+-108 0 V
+Z stroke
+LT3
+1.000 3853 559 109 279 BoxColFill
+LCb setrgbcolor
+3853 559 N
+0 278 V
+108 0 V
+0 -278 V
+-108 0 V
+Z stroke
+LT3
+1.000 3997 837 109 145 BoxColFill
+LCb setrgbcolor
+3997 837 N
+0 144 V
+108 0 V
+0 -144 V
+-108 0 V
+Z stroke
+LT3
+1.000 4142 751 109 395 BoxColFill
+LCb setrgbcolor
+4142 751 N
+0 394 V
+108 0 V
+0 -394 V
+-108 0 V
+Z stroke
+LT3
+1.000 4286 1400 109 399 BoxColFill
+LCb setrgbcolor
+4286 1400 N
+0 398 V
+108 0 V
+0 -398 V
+-108 0 V
+Z stroke
+LT3
+1.000 4430 2098 109 177 BoxColFill
+LCb setrgbcolor
+4430 2098 N
+0 176 V
+108 0 V
+0 -176 V
+-108 0 V
+Z stroke
+LT3
+1.000 4574 1310 109 58 BoxColFill
+LCb setrgbcolor
+4574 1310 N
+0 57 V
+108 0 V
+0 -57 V
+-108 0 V
+Z stroke
+LT3
+1.000 4718 1149 109 135 BoxColFill
+LCb setrgbcolor
+4718 1149 N
+0 134 V
+108 0 V
+0 -134 V
+-108 0 V
+Z stroke
+LT3
+1.000 4862 1060 109 4 BoxColFill
+LCb setrgbcolor
+4862 1060 N
+0 3 V
+108 0 V
+0 -3 V
+-108 0 V
+Z stroke
+LT3
+1.000 5006 1611 109 105 BoxColFill
+LCb setrgbcolor
+5006 1611 N
+0 104 V
+108 0 V
+0 -104 V
+-108 0 V
+Z stroke
+LT3
+% End plot #4
+% Begin plot #5
+1.000 UL
+LT4
+LCb setrgbcolor
+5939 2281 M
+[ [(Helvetica) 140.0 0.0 true true 0 (ddos)]
+] -46.7 MLshow
+LT4
+1.000 5456 2246 399 70 BoxColFill
+LCb setrgbcolor
+5456 2246 N
+399 0 V
+0 70 V
+-399 0 V
+0 -70 V
+Z stroke
+LT4
+1.000 972 499 109 1 BoxColFill
+LCb setrgbcolor
+972 499 N
+108 0 V
+-108 0 V
+Z stroke
+LT4
+1.000 1116 496 109 128 BoxColFill
+LCb setrgbcolor
+1116 496 N
+0 127 V
+108 0 V
+0 -127 V
+-108 0 V
+Z stroke
+LT4
+1.000 1260 496 109 413 BoxColFill
+LCb setrgbcolor
+1260 496 N
+0 412 V
+108 0 V
+0 -412 V
+-108 0 V
+Z stroke
+LT4
+1.000 1404 496 109 334 BoxColFill
+LCb setrgbcolor
+1404 496 N
+0 333 V
+108 0 V
+0 -333 V
+-108 0 V
+Z stroke
+LT4
+1.000 1548 496 109 83 BoxColFill
+LCb setrgbcolor
+1548 496 N
+0 82 V
+108 0 V
+0 -82 V
+-108 0 V
+Z stroke
+LT4
+1.000 1692 496 109 72 BoxColFill
+LCb setrgbcolor
+1692 496 N
+0 71 V
+108 0 V
+0 -71 V
+-108 0 V
+Z stroke
+LT4
+1.000 1836 496 109 153 BoxColFill
+LCb setrgbcolor
+1836 496 N
+0 152 V
+108 0 V
+0 -152 V
+-108 0 V
+Z stroke
+LT4
+1.000 1981 539 109 79 BoxColFill
+LCb setrgbcolor
+1981 539 N
+0 78 V
+108 0 V
+0 -78 V
+-108 0 V
+Z stroke
+LT4
+1.000 2125 581 109 432 BoxColFill
+LCb setrgbcolor
+2125 581 N
+0 431 V
+108 0 V
+0 -431 V
+-108 0 V
+Z stroke
+LT4
+1.000 2269 496 109 399 BoxColFill
+LCb setrgbcolor
+2269 496 N
+0 398 V
+108 0 V
+0 -398 V
+-108 0 V
+Z stroke
+LT4
+1.000 2413 526 109 213 BoxColFill
+LCb setrgbcolor
+2413 526 N
+0 212 V
+108 0 V
+0 -212 V
+-108 0 V
+Z stroke
+LT4
+1.000 2557 1480 109 364 BoxColFill
+LCb setrgbcolor
+2557 1480 N
+0 363 V
+108 0 V
+0 -363 V
+-108 0 V
+Z stroke
+LT4
+1.000 2701 648 109 714 BoxColFill
+LCb setrgbcolor
+2701 648 N
+0 713 V
+108 0 V
+0 -713 V
+-108 0 V
+Z stroke
+LT4
+1.000 2845 928 109 184 BoxColFill
+LCb setrgbcolor
+2845 928 N
+0 183 V
+108 0 V
+0 -183 V
+-108 0 V
+Z stroke
+LT4
+1.000 2989 805 109 690 BoxColFill
+LCb setrgbcolor
+2989 805 N
+0 689 V
+108 0 V
+0 -689 V
+-108 0 V
+Z stroke
+LT4
+1.000 3133 643 109 159 BoxColFill
+LCb setrgbcolor
+3133 643 N
+0 158 V
+108 0 V
+0 -158 V
+-108 0 V
+Z stroke
+LT4
+1.000 3277 780 109 435 BoxColFill
+LCb setrgbcolor
+3277 780 N
+0 434 V
+108 0 V
+0 -434 V
+-108 0 V
+Z stroke
+LT4
+1.000 3421 663 109 235 BoxColFill
+LCb setrgbcolor
+3421 663 N
+0 234 V
+108 0 V
+0 -234 V
+-108 0 V
+Z stroke
+LT4
+1.000 3565 800 109 206 BoxColFill
+LCb setrgbcolor
+3565 800 N
+0 205 V
+108 0 V
+0 -205 V
+-108 0 V
+Z stroke
+LT4
+1.000 3709 815 109 261 BoxColFill
+LCb setrgbcolor
+3709 815 N
+0 260 V
+108 0 V
+0 -260 V
+-108 0 V
+Z stroke
+LT4
+1.000 3853 837 109 544 BoxColFill
+LCb setrgbcolor
+3853 837 N
+0 543 V
+108 0 V
+0 -543 V
+-108 0 V
+Z stroke
+LT4
+1.000 3997 981 109 496 BoxColFill
+LCb setrgbcolor
+3997 981 N
+0 495 V
+108 0 V
+0 -495 V
+-108 0 V
+Z stroke
+LT4
+1.000 4142 1145 109 1149 BoxColFill
+LCb setrgbcolor
+4142 1145 N
+0 1148 V
+108 0 V
+0 -1148 V
+-108 0 V
+Z stroke
+LT4
+1.000 4286 1798 109 1422 BoxColFill
+LCb setrgbcolor
+4286 1798 N
+0 1421 V
+108 0 V
+0 -1421 V
+-108 0 V
+Z stroke
+LT4
+1.000 4430 2274 109 423 BoxColFill
+LCb setrgbcolor
+4430 2274 N
+0 422 V
+108 0 V
+0 -422 V
+-108 0 V
+Z stroke
+LT4
+1.000 4574 1367 109 280 BoxColFill
+LCb setrgbcolor
+4574 1367 N
+0 279 V
+108 0 V
+0 -279 V
+-108 0 V
+Z stroke
+LT4
+1.000 4718 1283 109 419 BoxColFill
+LCb setrgbcolor
+4718 1283 N
+0 418 V
+108 0 V
+0 -418 V
+-108 0 V
+Z stroke
+LT4
+1.000 4862 1063 109 1480 BoxColFill
+LCb setrgbcolor
+4862 1063 N
+0 1479 V
+108 0 V
+0 -1479 V
+-108 0 V
+Z stroke
+LT4
+1.000 5006 1715 109 625 BoxColFill
+LCb setrgbcolor
+5006 1715 N
+0 624 V
+108 0 V
+0 -624 V
+-108 0 V
+Z stroke
+LT4
+% End plot #5
+% Begin plot #6
+1.000 UL
+LT5
+LCb setrgbcolor
+5939 2421 M
+[ [(Helvetica) 140.0 0.0 true true 0 (dns)]
+] -46.7 MLshow
+LT5
+1.000 5456 2386 399 70 BoxColFill
+LCb setrgbcolor
+5456 2386 N
+399 0 V
+0 70 V
+-399 0 V
+0 -70 V
+Z stroke
+LT5
+1.000 972 499 109 1 BoxColFill
+LCb setrgbcolor
+972 499 N
+108 0 V
+-108 0 V
+Z stroke
+LT5
+1.000 1116 623 109 1 BoxColFill
+LCb setrgbcolor
+1116 623 N
+108 0 V
+-108 0 V
+Z stroke
+LT5
+1.000 1260 908 109 1 BoxColFill
+LCb setrgbcolor
+1260 908 N
+108 0 V
+-108 0 V
+Z stroke
+LT5
+1.000 1404 829 109 1 BoxColFill
+LCb setrgbcolor
+1404 829 N
+108 0 V
+-108 0 V
+Z stroke
+LT5
+1.000 1548 578 109 1 BoxColFill
+LCb setrgbcolor
+1548 578 N
+108 0 V
+-108 0 V
+Z stroke
+LT5
+1.000 1692 567 109 1 BoxColFill
+LCb setrgbcolor
+1692 567 N
+108 0 V
+-108 0 V
+Z stroke
+LT5
+1.000 1836 648 109 1 BoxColFill
+LCb setrgbcolor
+1836 648 N
+108 0 V
+-108 0 V
+Z stroke
+LT5
+1.000 1981 617 109 2 BoxColFill
+LCb setrgbcolor
+1981 617 N
+0 1 V
+108 0 V
+0 -1 V
+-108 0 V
+Z stroke
+LT5
+1.000 2125 1012 109 24 BoxColFill
+LCb setrgbcolor
+2125 1012 N
+0 23 V
+108 0 V
+0 -23 V
+-108 0 V
+Z stroke
+LT5
+1.000 2269 894 109 1 BoxColFill
+LCb setrgbcolor
+2269 894 N
+108 0 V
+-108 0 V
+Z stroke
+LT5
+1.000 2413 738 109 1 BoxColFill
+LCb setrgbcolor
+2413 738 N
+108 0 V
+-108 0 V
+Z stroke
+LT5
+1.000 2557 1843 109 1 BoxColFill
+LCb setrgbcolor
+2557 1843 N
+108 0 V
+-108 0 V
+Z stroke
+LT5
+1.000 2701 1361 109 1 BoxColFill
+LCb setrgbcolor
+2701 1361 N
+108 0 V
+-108 0 V
+Z stroke
+LT5
+1.000 2845 1111 109 1 BoxColFill
+LCb setrgbcolor
+2845 1111 N
+108 0 V
+-108 0 V
+Z stroke
+LT5
+1.000 2989 1494 109 1 BoxColFill
+LCb setrgbcolor
+2989 1494 N
+108 0 V
+-108 0 V
+Z stroke
+LT5
+1.000 3133 801 109 1 BoxColFill
+LCb setrgbcolor
+3133 801 N
+108 0 V
+-108 0 V
+Z stroke
+LT5
+1.000 3277 1214 109 1 BoxColFill
+LCb setrgbcolor
+3277 1214 N
+108 0 V
+-108 0 V
+Z stroke
+LT5
+1.000 3421 897 109 1 BoxColFill
+LCb setrgbcolor
+3421 897 N
+108 0 V
+-108 0 V
+Z stroke
+LT5
+1.000 3565 1005 109 1 BoxColFill
+LCb setrgbcolor
+3565 1005 N
+108 0 V
+-108 0 V
+Z stroke
+LT5
+1.000 3709 1075 109 1 BoxColFill
+LCb setrgbcolor
+3709 1075 N
+108 0 V
+-108 0 V
+Z stroke
+LT5
+1.000 3853 1380 109 1 BoxColFill
+LCb setrgbcolor
+3853 1380 N
+108 0 V
+-108 0 V
+Z stroke
+LT5
+1.000 3997 1476 109 1 BoxColFill
+LCb setrgbcolor
+3997 1476 N
+108 0 V
+-108 0 V
+Z stroke
+LT5
+1.000 4142 2293 109 1 BoxColFill
+LCb setrgbcolor
+4142 2293 N
+108 0 V
+-108 0 V
+Z stroke
+LT5
+1.000 4286 3219 109 1 BoxColFill
+LCb setrgbcolor
+4286 3219 N
+108 0 V
+-108 0 V
+Z stroke
+LT5
+1.000 4430 2696 109 1 BoxColFill
+LCb setrgbcolor
+4430 2696 N
+108 0 V
+-108 0 V
+Z stroke
+LT5
+1.000 4574 1646 109 1 BoxColFill
+LCb setrgbcolor
+4574 1646 N
+108 0 V
+-108 0 V
+Z stroke
+LT5
+1.000 4718 1701 109 1 BoxColFill
+LCb setrgbcolor
+4718 1701 N
+108 0 V
+-108 0 V
+Z stroke
+LT5
+1.000 4862 2542 109 1 BoxColFill
+LCb setrgbcolor
+4862 2542 N
+108 0 V
+-108 0 V
+Z stroke
+LT5
+1.000 5006 2339 109 1 BoxColFill
+LCb setrgbcolor
+5006 2339 N
+108 0 V
+-108 0 V
+Z stroke
+LT5
+% End plot #6
+% Begin plot #7
+1.000 UL
+LT6
+LCb setrgbcolor
+5939 2561 M
+[ [(Helvetica) 140.0 0.0 true true 0 (evaluation)]
+] -46.7 MLshow
+LT6
+1.000 5456 2526 399 70 BoxColFill
+LCb setrgbcolor
+5456 2526 N
+399 0 V
+0 70 V
+-399 0 V
+0 -70 V
+Z stroke
+LT6
+1.000 972 499 109 1 BoxColFill
+LCb setrgbcolor
+972 499 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 1116 623 109 1 BoxColFill
+LCb setrgbcolor
+1116 623 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 1260 908 109 1 BoxColFill
+LCb setrgbcolor
+1260 908 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 1404 829 109 1 BoxColFill
+LCb setrgbcolor
+1404 829 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 1548 578 109 1 BoxColFill
+LCb setrgbcolor
+1548 578 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 1692 567 109 1 BoxColFill
+LCb setrgbcolor
+1692 567 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 1836 648 109 1 BoxColFill
+LCb setrgbcolor
+1836 648 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 1981 618 109 1 BoxColFill
+LCb setrgbcolor
+1981 618 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 2125 1035 109 46 BoxColFill
+LCb setrgbcolor
+2125 1035 N
+0 45 V
+108 0 V
+0 -45 V
+-108 0 V
+Z stroke
+LT6
+1.000 2269 894 109 24 BoxColFill
+LCb setrgbcolor
+2269 894 N
+0 23 V
+108 0 V
+0 -23 V
+-108 0 V
+Z stroke
+LT6
+1.000 2413 738 109 50 BoxColFill
+LCb setrgbcolor
+2413 738 N
+0 49 V
+108 0 V
+0 -49 V
+-108 0 V
+Z stroke
+LT6
+1.000 2557 1843 109 4 BoxColFill
+LCb setrgbcolor
+2557 1843 N
+0 3 V
+108 0 V
+0 -3 V
+-108 0 V
+Z stroke
+LT6
+1.000 2701 1361 109 16 BoxColFill
+LCb setrgbcolor
+2701 1361 N
+0 15 V
+108 0 V
+0 -15 V
+-108 0 V
+Z stroke
+LT6
+1.000 2845 1111 109 1 BoxColFill
+LCb setrgbcolor
+2845 1111 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 2989 1494 109 1 BoxColFill
+LCb setrgbcolor
+2989 1494 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 3133 801 109 1 BoxColFill
+LCb setrgbcolor
+3133 801 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 3277 1214 109 1 BoxColFill
+LCb setrgbcolor
+3277 1214 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 3421 897 109 1 BoxColFill
+LCb setrgbcolor
+3421 897 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 3565 1005 109 2 BoxColFill
+LCb setrgbcolor
+3565 1005 N
+0 1 V
+108 0 V
+0 -1 V
+-108 0 V
+Z stroke
+LT6
+1.000 3709 1075 109 199 BoxColFill
+LCb setrgbcolor
+3709 1075 N
+0 198 V
+108 0 V
+0 -198 V
+-108 0 V
+Z stroke
+LT6
+1.000 3853 1380 109 188 BoxColFill
+LCb setrgbcolor
+3853 1380 N
+0 187 V
+108 0 V
+0 -187 V
+-108 0 V
+Z stroke
+LT6
+1.000 3997 1476 109 11 BoxColFill
+LCb setrgbcolor
+3997 1476 N
+0 10 V
+108 0 V
+0 -10 V
+-108 0 V
+Z stroke
+LT6
+1.000 4142 2293 109 1 BoxColFill
+LCb setrgbcolor
+4142 2293 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 4286 3219 109 1 BoxColFill
+LCb setrgbcolor
+4286 3219 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 4430 2696 109 1 BoxColFill
+LCb setrgbcolor
+4430 2696 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 4574 1646 109 1 BoxColFill
+LCb setrgbcolor
+4574 1646 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 4718 1701 109 1 BoxColFill
+LCb setrgbcolor
+4718 1701 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 4862 2542 109 1 BoxColFill
+LCb setrgbcolor
+4862 2542 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 5006 2339 109 3 BoxColFill
+LCb setrgbcolor
+5006 2339 N
+0 2 V
+108 0 V
+0 -2 V
+-108 0 V
+Z stroke
+LT6
+% End plot #7
+% Begin plot #8
+1.000 UL
+LT7
+LCb setrgbcolor
+5939 2701 M
+[ [(Helvetica) 140.0 0.0 true true 0 (infrastructure)]
+] -46.7 MLshow
+LT7
+1.000 5456 2666 399 70 BoxColFill
+LCb setrgbcolor
+5456 2666 N
+399 0 V
+0 70 V
+-399 0 V
+0 -70 V
+Z stroke
+LT7
+1.000 972 499 109 1 BoxColFill
+LCb setrgbcolor
+972 499 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 1116 623 109 1 BoxColFill
+LCb setrgbcolor
+1116 623 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 1260 908 109 1 BoxColFill
+LCb setrgbcolor
+1260 908 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 1404 829 109 1 BoxColFill
+LCb setrgbcolor
+1404 829 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 1548 578 109 1 BoxColFill
+LCb setrgbcolor
+1548 578 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 1692 567 109 1 BoxColFill
+LCb setrgbcolor
+1692 567 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 1836 648 109 1 BoxColFill
+LCb setrgbcolor
+1836 648 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 1981 618 109 1 BoxColFill
+LCb setrgbcolor
+1981 618 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 2125 1080 109 1 BoxColFill
+LCb setrgbcolor
+2125 1080 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 2269 917 109 1 BoxColFill
+LCb setrgbcolor
+2269 917 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 2413 787 109 1 BoxColFill
+LCb setrgbcolor
+2413 787 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 2557 1846 109 1 BoxColFill
+LCb setrgbcolor
+2557 1846 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 2701 1376 109 1 BoxColFill
+LCb setrgbcolor
+2701 1376 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 2845 1111 109 1 BoxColFill
+LCb setrgbcolor
+2845 1111 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 2989 1494 109 1 BoxColFill
+LCb setrgbcolor
+2989 1494 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 3133 801 109 1 BoxColFill
+LCb setrgbcolor
+3133 801 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 3277 1214 109 9 BoxColFill
+LCb setrgbcolor
+3277 1214 N
+0 8 V
+108 0 V
+0 -8 V
+-108 0 V
+Z stroke
+LT7
+1.000 3421 897 109 54 BoxColFill
+LCb setrgbcolor
+3421 897 N
+0 53 V
+108 0 V
+0 -53 V
+-108 0 V
+Z stroke
+LT7
+1.000 3565 1006 109 1 BoxColFill
+LCb setrgbcolor
+3565 1006 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 3709 1273 109 134 BoxColFill
+LCb setrgbcolor
+3709 1273 N
+0 133 V
+108 0 V
+0 -133 V
+-108 0 V
+Z stroke
+LT7
+1.000 3853 1567 109 4 BoxColFill
+LCb setrgbcolor
+3853 1567 N
+0 3 V
+108 0 V
+0 -3 V
+-108 0 V
+Z stroke
+LT7
+1.000 3997 1486 109 51 BoxColFill
+LCb setrgbcolor
+3997 1486 N
+0 50 V
+108 0 V
+0 -50 V
+-108 0 V
+Z stroke
+LT7
+1.000 4142 2293 109 1 BoxColFill
+LCb setrgbcolor
+4142 2293 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 4286 3219 109 1 BoxColFill
+LCb setrgbcolor
+4286 3219 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 4430 2696 109 1 BoxColFill
+LCb setrgbcolor
+4430 2696 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 4574 1646 109 153 BoxColFill
+LCb setrgbcolor
+4574 1646 N
+0 152 V
+108 0 V
+0 -152 V
+-108 0 V
+Z stroke
+LT7
+1.000 4718 1701 109 184 BoxColFill
+LCb setrgbcolor
+4718 1701 N
+0 183 V
+108 0 V
+0 -183 V
+-108 0 V
+Z stroke
+LT7
+1.000 4862 2542 109 37 BoxColFill
+LCb setrgbcolor
+4862 2542 N
+0 36 V
+108 0 V
+0 -36 V
+-108 0 V
+Z stroke
+LT7
+1.000 5006 2341 109 627 BoxColFill
+LCb setrgbcolor
+5006 2341 N
+0 626 V
+108 0 V
+0 -626 V
+-108 0 V
+Z stroke
+LT7
+% End plot #8
+% Begin plot #9
+1.000 UL
+LT8
+LCb setrgbcolor
+5939 2841 M
+[ [(Helvetica) 140.0 0.0 true true 0 (intrusions)]
+] -46.7 MLshow
+LT8
+1.000 5456 2806 399 70 BoxColFill
+LCb setrgbcolor
+5456 2806 N
+399 0 V
+0 70 V
+-399 0 V
+0 -70 V
+Z stroke
+LT8
+1.000 972 499 109 1 BoxColFill
+LCb setrgbcolor
+972 499 N
+108 0 V
+-108 0 V
+Z stroke
+LT8
+1.000 1116 623 109 1 BoxColFill
+LCb setrgbcolor
+1116 623 N
+108 0 V
+-108 0 V
+Z stroke
+LT8
+1.000 1260 908 109 1 BoxColFill
+LCb setrgbcolor
+1260 908 N
+108 0 V
+-108 0 V
+Z stroke
+LT8
+1.000 1404 829 109 1 BoxColFill
+LCb setrgbcolor
+1404 829 N
+108 0 V
+-108 0 V
+Z stroke
+LT8
+1.000 1548 578 109 1 BoxColFill
+LCb setrgbcolor
+1548 578 N
+108 0 V
+-108 0 V
+Z stroke
+LT8
+1.000 1692 567 109 1 BoxColFill
+LCb setrgbcolor
+1692 567 N
+108 0 V
+-108 0 V
+Z stroke
+LT8
+1.000 1836 648 109 1 BoxColFill
+LCb setrgbcolor
+1836 648 N
+108 0 V
+-108 0 V
+Z stroke
+LT8
+1.000 1981 618 109 1 BoxColFill
+LCb setrgbcolor
+1981 618 N
+108 0 V
+-108 0 V
+Z stroke
+LT8
+1.000 2125 1080 109 32 BoxColFill
+LCb setrgbcolor
+2125 1080 N
+0 31 V
+108 0 V
+0 -31 V
+-108 0 V
+Z stroke
+LT8
+1.000 2269 917 109 34 BoxColFill
+LCb setrgbcolor
+2269 917 N
+0 33 V
+108 0 V
+0 -33 V
+-108 0 V
+Z stroke
+LT8
+1.000 2413 787 109 106 BoxColFill
+LCb setrgbcolor
+2413 787 N
+0 105 V
+108 0 V
+0 -105 V
+-108 0 V
+Z stroke
+LT8
+1.000 2557 1846 109 196 BoxColFill
+LCb setrgbcolor
+2557 1846 N
+0 195 V
+108 0 V
+0 -195 V
+-108 0 V
+Z stroke
+LT8
+1.000 2701 1376 109 172 BoxColFill
+LCb setrgbcolor
+2701 1376 N
+0 171 V
+108 0 V
+0 -171 V
+-108 0 V
+Z stroke
+LT8
+1.000 2845 1111 109 163 BoxColFill
+LCb setrgbcolor
+2845 1111 N
+0 162 V
+108 0 V
+0 -162 V
+-108 0 V
+Z stroke
+LT8
+1.000 2989 1494 109 101 BoxColFill
+LCb setrgbcolor
+2989 1494 N
+0 100 V
+108 0 V
+0 -100 V
+-108 0 V
+Z stroke
+LT8
+1.000 3133 801 109 411 BoxColFill
+LCb setrgbcolor
+3133 801 N
+0 410 V
+108 0 V
+0 -410 V
+-108 0 V
+Z stroke
+LT8
+1.000 3277 1222 109 47 BoxColFill
+LCb setrgbcolor
+3277 1222 N
+0 46 V
+108 0 V
+0 -46 V
+-108 0 V
+Z stroke
+LT8
+1.000 3421 950 109 18 BoxColFill
+LCb setrgbcolor
+3421 950 N
+0 17 V
+108 0 V
+0 -17 V
+-108 0 V
+Z stroke
+LT8
+1.000 3565 1006 109 12 BoxColFill
+LCb setrgbcolor
+3565 1006 N
+0 11 V
+108 0 V
+0 -11 V
+-108 0 V
+Z stroke
+LT8
+1.000 3709 1406 109 294 BoxColFill
+LCb setrgbcolor
+3709 1406 N
+0 293 V
+108 0 V
+0 -293 V
+-108 0 V
+Z stroke
+LT8
+1.000 3853 1570 109 493 BoxColFill
+LCb setrgbcolor
+3853 1570 N
+0 492 V
+108 0 V
+0 -492 V
+-108 0 V
+Z stroke
+LT8
+1.000 3997 1536 109 977 BoxColFill
+LCb setrgbcolor
+3997 1536 N
+0 976 V
+108 0 V
+0 -976 V
+-108 0 V
+Z stroke
+LT8
+1.000 4142 2293 109 1006 BoxColFill
+LCb setrgbcolor
+4142 2293 N
+0 1005 V
+108 0 V
+0 -1005 V
+-108 0 V
+Z stroke
+LT8
+1.000 4286 3219 109 417 BoxColFill
+LCb setrgbcolor
+4286 3219 N
+0 416 V
+108 0 V
+0 -416 V
+-108 0 V
+Z stroke
+LT8
+1.000 4430 2696 109 579 BoxColFill
+LCb setrgbcolor
+4430 2696 N
+0 578 V
+108 0 V
+0 -578 V
+-108 0 V
+Z stroke
+LT8
+1.000 4574 1798 109 494 BoxColFill
+LCb setrgbcolor
+4574 1798 N
+0 493 V
+108 0 V
+0 -493 V
+-108 0 V
+Z stroke
+LT8
+1.000 4718 1884 109 810 BoxColFill
+LCb setrgbcolor
+4718 1884 N
+0 809 V
+108 0 V
+0 -809 V
+-108 0 V
+Z stroke
+LT8
+1.000 4862 2578 109 274 BoxColFill
+LCb setrgbcolor
+4862 2578 N
+0 273 V
+108 0 V
+0 -273 V
+-108 0 V
+Z stroke
+LT8
+1.000 5006 2967 109 93 BoxColFill
+LCb setrgbcolor
+5006 2967 N
+0 92 V
+108 0 V
+0 -92 V
+-108 0 V
+Z stroke
+LT8
+% End plot #9
+% Begin plot #10
+1.000 UL
+LT0
+LCb setrgbcolor
+5939 2981 M
+[ [(Helvetica) 140.0 0.0 true true 0 (malware)]
+] -46.7 MLshow
+LT0
+1.000 5456 2946 399 70 BoxColFill
+LCb setrgbcolor
+5456 2946 N
+399 0 V
+0 70 V
+-399 0 V
+0 -70 V
+Z stroke
+LT0
+1.000 972 499 109 1 BoxColFill
+LCb setrgbcolor
+972 499 N
+108 0 V
+-108 0 V
+Z stroke
+LT0
+1.000 1116 623 109 1 BoxColFill
+LCb setrgbcolor
+1116 623 N
+108 0 V
+-108 0 V
+Z stroke
+LT0
+1.000 1260 908 109 1 BoxColFill
+LCb setrgbcolor
+1260 908 N
+108 0 V
+-108 0 V
+Z stroke
+LT0
+1.000 1404 829 109 1 BoxColFill
+LCb setrgbcolor
+1404 829 N
+108 0 V
+-108 0 V
+Z stroke
+LT0
+1.000 1548 578 109 1 BoxColFill
+LCb setrgbcolor
+1548 578 N
+108 0 V
+-108 0 V
+Z stroke
+LT0
+1.000 1692 567 109 1 BoxColFill
+LCb setrgbcolor
+1692 567 N
+108 0 V
+-108 0 V
+Z stroke
+LT0
+1.000 1836 648 109 1 BoxColFill
+LCb setrgbcolor
+1836 648 N
+108 0 V
+-108 0 V
+Z stroke
+LT0
+1.000 1981 618 109 1 BoxColFill
+LCb setrgbcolor
+1981 618 N
+108 0 V
+-108 0 V
+Z stroke
+LT0
+1.000 2125 1111 109 1 BoxColFill
+LCb setrgbcolor
+2125 1111 N
+108 0 V
+-108 0 V
+Z stroke
+LT0
+1.000 2269 950 109 1 BoxColFill
+LCb setrgbcolor
+2269 950 N
+108 0 V
+-108 0 V
+Z stroke
+LT0
+1.000 2413 892 109 1 BoxColFill
+LCb setrgbcolor
+2413 892 N
+108 0 V
+-108 0 V
+Z stroke
+LT0
+1.000 2557 2041 109 1 BoxColFill
+LCb setrgbcolor
+2557 2041 N
+108 0 V
+-108 0 V
+Z stroke
+LT0
+1.000 2701 1547 109 1 BoxColFill
+LCb setrgbcolor
+2701 1547 N
+108 0 V
+-108 0 V
+Z stroke
+LT0
+1.000 2845 1273 109 10 BoxColFill
+LCb setrgbcolor
+2845 1273 N
+0 9 V
+108 0 V
+0 -9 V
+-108 0 V
+Z stroke
+LT0
+1.000 2989 1594 109 37 BoxColFill
+LCb setrgbcolor
+2989 1594 N
+0 36 V
+108 0 V
+0 -36 V
+-108 0 V
+Z stroke
+LT0
+1.000 3133 1211 109 1 BoxColFill
+LCb setrgbcolor
+3133 1211 N
+108 0 V
+-108 0 V
+Z stroke
+LT0
+1.000 3277 1268 109 1 BoxColFill
+LCb setrgbcolor
+3277 1268 N
+108 0 V
+-108 0 V
+Z stroke
+LT0
+1.000 3421 967 109 1 BoxColFill
+LCb setrgbcolor
+3421 967 N
+108 0 V
+-108 0 V
+Z stroke
+LT0
+1.000 3565 1017 109 50 BoxColFill
+LCb setrgbcolor
+3565 1017 N
+0 49 V
+108 0 V
+0 -49 V
+-108 0 V
+Z stroke
+LT0
+1.000 3709 1699 109 243 BoxColFill
+LCb setrgbcolor
+3709 1699 N
+0 242 V
+108 0 V
+0 -242 V
+-108 0 V
+Z stroke
+LT0
+1.000 3853 2062 109 352 BoxColFill
+LCb setrgbcolor
+3853 2062 N
+0 351 V
+108 0 V
+0 -351 V
+-108 0 V
+Z stroke
+LT0
+1.000 3997 2512 109 413 BoxColFill
+LCb setrgbcolor
+3997 2512 N
+0 412 V
+108 0 V
+0 -412 V
+-108 0 V
+Z stroke
+LT0
+1.000 4142 3298 109 407 BoxColFill
+LCb setrgbcolor
+4142 3298 N
+0 406 V
+108 0 V
+0 -406 V
+-108 0 V
+Z stroke
+LT0
+1.000 4286 3635 109 517 BoxColFill
+LCb setrgbcolor
+4286 3635 N
+0 516 V
+108 0 V
+0 -516 V
+-108 0 V
+Z stroke
+LT0
+1.000 4430 3274 109 501 BoxColFill
+LCb setrgbcolor
+4430 3274 N
+0 500 V
+108 0 V
+0 -500 V
+-108 0 V
+Z stroke
+LT0
+1.000 4574 2291 109 634 BoxColFill
+LCb setrgbcolor
+4574 2291 N
+0 633 V
+108 0 V
+0 -633 V
+-108 0 V
+Z stroke
+LT0
+1.000 4718 2693 109 415 BoxColFill
+LCb setrgbcolor
+4718 2693 N
+0 414 V
+108 0 V
+0 -414 V
+-108 0 V
+Z stroke
+LT0
+1.000 4862 2851 109 816 BoxColFill
+LCb setrgbcolor
+4862 2851 N
+0 815 V
+108 0 V
+0 -815 V
+-108 0 V
+Z stroke
+LT0
+1.000 5006 3059 109 506 BoxColFill
+LCb setrgbcolor
+5006 3059 N
+0 505 V
+108 0 V
+0 -505 V
+-108 0 V
+Z stroke
+LT0
+% End plot #10
+% Begin plot #11
+1.000 UL
+LT1
+LCb setrgbcolor
+5939 3121 M
+[ [(Helvetica) 140.0 0.0 true true 0 (metrics)]
+] -46.7 MLshow
+LT1
+1.000 5456 3086 399 70 BoxColFill
+LCb setrgbcolor
+5456 3086 N
+399 0 V
+0 70 V
+-399 0 V
+0 -70 V
+Z stroke
+LT1
+1.000 972 499 109 1 BoxColFill
+LCb setrgbcolor
+972 499 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 1116 623 109 1 BoxColFill
+LCb setrgbcolor
+1116 623 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 1260 908 109 1 BoxColFill
+LCb setrgbcolor
+1260 908 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 1404 829 109 1 BoxColFill
+LCb setrgbcolor
+1404 829 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 1548 578 109 1 BoxColFill
+LCb setrgbcolor
+1548 578 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 1692 567 109 1 BoxColFill
+LCb setrgbcolor
+1692 567 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 1836 648 109 1 BoxColFill
+LCb setrgbcolor
+1836 648 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 1981 618 109 1 BoxColFill
+LCb setrgbcolor
+1981 618 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 2125 1111 109 1 BoxColFill
+LCb setrgbcolor
+2125 1111 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 2269 950 109 1 BoxColFill
+LCb setrgbcolor
+2269 950 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 2413 892 109 1 BoxColFill
+LCb setrgbcolor
+2413 892 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 2557 2041 109 1 BoxColFill
+LCb setrgbcolor
+2557 2041 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 2701 1547 109 1 BoxColFill
+LCb setrgbcolor
+2701 1547 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 2845 1282 109 140 BoxColFill
+LCb setrgbcolor
+2845 1282 N
+0 139 V
+108 0 V
+0 -139 V
+-108 0 V
+Z stroke
+LT1
+1.000 2989 1630 109 1 BoxColFill
+LCb setrgbcolor
+2989 1630 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 3133 1211 109 1 BoxColFill
+LCb setrgbcolor
+3133 1211 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 3277 1268 109 1 BoxColFill
+LCb setrgbcolor
+3277 1268 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 3421 967 109 1 BoxColFill
+LCb setrgbcolor
+3421 967 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 3565 1066 109 1 BoxColFill
+LCb setrgbcolor
+3565 1066 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 3709 1941 109 1 BoxColFill
+LCb setrgbcolor
+3709 1941 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 3853 2413 109 1 BoxColFill
+LCb setrgbcolor
+3853 2413 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 3997 2924 109 1 BoxColFill
+LCb setrgbcolor
+3997 2924 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 4142 3704 109 1 BoxColFill
+LCb setrgbcolor
+4142 3704 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 4286 4151 109 1 BoxColFill
+LCb setrgbcolor
+4286 4151 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 4430 3774 109 1 BoxColFill
+LCb setrgbcolor
+4430 3774 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 4574 2924 109 1 BoxColFill
+LCb setrgbcolor
+4574 2924 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 4718 3107 109 1 BoxColFill
+LCb setrgbcolor
+4718 3107 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 4862 3666 109 1 BoxColFill
+LCb setrgbcolor
+4862 3666 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 5006 3564 109 1 BoxColFill
+LCb setrgbcolor
+5006 3564 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+% End plot #11
+% Begin plot #12
+1.000 UL
+LT2
+LCb setrgbcolor
+5939 3261 M
+[ [(Helvetica) 140.0 0.0 true true 0 (multicast)]
+] -46.7 MLshow
+LT2
+1.000 5456 3226 399 70 BoxColFill
+LCb setrgbcolor
+5456 3226 N
+399 0 V
+0 70 V
+-399 0 V
+0 -70 V
+Z stroke
+LT2
+1.000 972 499 109 1 BoxColFill
+LCb setrgbcolor
+972 499 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 1116 623 109 1 BoxColFill
+LCb setrgbcolor
+1116 623 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 1260 908 109 1 BoxColFill
+LCb setrgbcolor
+1260 908 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 1404 829 109 1 BoxColFill
+LCb setrgbcolor
+1404 829 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 1548 578 109 1 BoxColFill
+LCb setrgbcolor
+1548 578 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 1692 567 109 1 BoxColFill
+LCb setrgbcolor
+1692 567 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 1836 648 109 1 BoxColFill
+LCb setrgbcolor
+1836 648 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 1981 618 109 1 BoxColFill
+LCb setrgbcolor
+1981 618 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 2125 1111 109 1 BoxColFill
+LCb setrgbcolor
+2125 1111 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 2269 950 109 1 BoxColFill
+LCb setrgbcolor
+2269 950 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 2413 892 109 105 BoxColFill
+LCb setrgbcolor
+2413 892 N
+0 104 V
+108 0 V
+0 -104 V
+-108 0 V
+Z stroke
+LT2
+1.000 2557 2041 109 3 BoxColFill
+LCb setrgbcolor
+2557 2041 N
+0 2 V
+108 0 V
+0 -2 V
+-108 0 V
+Z stroke
+LT2
+1.000 2701 1547 109 1 BoxColFill
+LCb setrgbcolor
+2701 1547 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 2845 1421 109 1 BoxColFill
+LCb setrgbcolor
+2845 1421 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 2989 1630 109 10 BoxColFill
+LCb setrgbcolor
+2989 1630 N
+0 9 V
+108 0 V
+0 -9 V
+-108 0 V
+Z stroke
+LT2
+1.000 3133 1211 109 1 BoxColFill
+LCb setrgbcolor
+3133 1211 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 3277 1268 109 1 BoxColFill
+LCb setrgbcolor
+3277 1268 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 3421 967 109 1 BoxColFill
+LCb setrgbcolor
+3421 967 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 3565 1066 109 1 BoxColFill
+LCb setrgbcolor
+3565 1066 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 3709 1941 109 1 BoxColFill
+LCb setrgbcolor
+3709 1941 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 3853 2413 109 1 BoxColFill
+LCb setrgbcolor
+3853 2413 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 3997 2924 109 1 BoxColFill
+LCb setrgbcolor
+3997 2924 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 4142 3704 109 1 BoxColFill
+LCb setrgbcolor
+4142 3704 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 4286 4151 109 1 BoxColFill
+LCb setrgbcolor
+4286 4151 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 4430 3774 109 1 BoxColFill
+LCb setrgbcolor
+4430 3774 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 4574 2924 109 1 BoxColFill
+LCb setrgbcolor
+4574 2924 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 4718 3107 109 1 BoxColFill
+LCb setrgbcolor
+4718 3107 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 4862 3666 109 1 BoxColFill
+LCb setrgbcolor
+4862 3666 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 5006 3564 109 1 BoxColFill
+LCb setrgbcolor
+5006 3564 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+% End plot #12
+% Begin plot #13
+1.000 UL
+LT3
+LCb setrgbcolor
+5939 3401 M
+[ [(Helvetica) 140.0 0.0 true true 0 (overlays)]
+] -46.7 MLshow
+LT3
+1.000 5456 3366 399 70 BoxColFill
+LCb setrgbcolor
+5456 3366 N
+399 0 V
+0 70 V
+-399 0 V
+0 -70 V
+Z stroke
+LT3
+1.000 972 499 109 1 BoxColFill
+LCb setrgbcolor
+972 499 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 1116 623 109 1 BoxColFill
+LCb setrgbcolor
+1116 623 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 1260 908 109 1 BoxColFill
+LCb setrgbcolor
+1260 908 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 1404 829 109 1 BoxColFill
+LCb setrgbcolor
+1404 829 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 1548 578 109 1 BoxColFill
+LCb setrgbcolor
+1548 578 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 1692 567 109 1 BoxColFill
+LCb setrgbcolor
+1692 567 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 1836 648 109 15 BoxColFill
+LCb setrgbcolor
+1836 648 N
+0 14 V
+108 0 V
+0 -14 V
+-108 0 V
+Z stroke
+LT3
+1.000 1981 618 109 15 BoxColFill
+LCb setrgbcolor
+1981 618 N
+0 14 V
+108 0 V
+0 -14 V
+-108 0 V
+Z stroke
+LT3
+1.000 2125 1111 109 3 BoxColFill
+LCb setrgbcolor
+2125 1111 N
+0 2 V
+108 0 V
+0 -2 V
+-108 0 V
+Z stroke
+LT3
+1.000 2269 950 109 59 BoxColFill
+LCb setrgbcolor
+2269 950 N
+0 58 V
+108 0 V
+0 -58 V
+-108 0 V
+Z stroke
+LT3
+1.000 2413 996 109 1 BoxColFill
+LCb setrgbcolor
+2413 996 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 2557 2043 109 1 BoxColFill
+LCb setrgbcolor
+2557 2043 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 2701 1547 109 1 BoxColFill
+LCb setrgbcolor
+2701 1547 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 2845 1421 109 1 BoxColFill
+LCb setrgbcolor
+2845 1421 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 2989 1639 109 1 BoxColFill
+LCb setrgbcolor
+2989 1639 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 3133 1211 109 1 BoxColFill
+LCb setrgbcolor
+3133 1211 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 3277 1268 109 1 BoxColFill
+LCb setrgbcolor
+3277 1268 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 3421 967 109 1 BoxColFill
+LCb setrgbcolor
+3421 967 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 3565 1066 109 1 BoxColFill
+LCb setrgbcolor
+3565 1066 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 3709 1941 109 1 BoxColFill
+LCb setrgbcolor
+3709 1941 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 3853 2413 109 1 BoxColFill
+LCb setrgbcolor
+3853 2413 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 3997 2924 109 2 BoxColFill
+LCb setrgbcolor
+3997 2924 N
+0 1 V
+108 0 V
+0 -1 V
+-108 0 V
+Z stroke
+LT3
+1.000 4142 3704 109 1 BoxColFill
+LCb setrgbcolor
+4142 3704 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 4286 4151 109 1 BoxColFill
+LCb setrgbcolor
+4286 4151 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 4430 3774 109 1 BoxColFill
+LCb setrgbcolor
+4430 3774 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 4574 2924 109 1 BoxColFill
+LCb setrgbcolor
+4574 2924 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 4718 3107 109 1 BoxColFill
+LCb setrgbcolor
+4718 3107 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 4862 3666 109 1 BoxColFill
+LCb setrgbcolor
+4862 3666 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 5006 3564 109 400 BoxColFill
+LCb setrgbcolor
+5006 3564 N
+0 399 V
+108 0 V
+0 -399 V
+-108 0 V
+Z stroke
+LT3
+% End plot #13
+% Begin plot #14
+1.000 UL
+LT4
+LCb setrgbcolor
+5939 3541 M
+[ [(Helvetica) 140.0 0.0 true true 0 (privacy)]
+] -46.7 MLshow
+LT4
+1.000 5456 3506 399 70 BoxColFill
+LCb setrgbcolor
+5456 3506 N
+399 0 V
+0 70 V
+-399 0 V
+0 -70 V
+Z stroke
+LT4
+1.000 972 499 109 1 BoxColFill
+LCb setrgbcolor
+972 499 N
+108 0 V
+-108 0 V
+Z stroke
+LT4
+1.000 1116 623 109 1 BoxColFill
+LCb setrgbcolor
+1116 623 N
+108 0 V
+-108 0 V
+Z stroke
+LT4
+1.000 1260 908 109 1 BoxColFill
+LCb setrgbcolor
+1260 908 N
+108 0 V
+-108 0 V
+Z stroke
+LT4
+1.000 1404 829 109 1 BoxColFill
+LCb setrgbcolor
+1404 829 N
+108 0 V
+-108 0 V
+Z stroke
+LT4
+1.000 1548 578 109 1 BoxColFill
+LCb setrgbcolor
+1548 578 N
+108 0 V
+-108 0 V
+Z stroke
+LT4
+1.000 1692 567 109 1 BoxColFill
+LCb setrgbcolor
+1692 567 N
+108 0 V
+-108 0 V
+Z stroke
+LT4
+1.000 1836 662 109 1 BoxColFill
+LCb setrgbcolor
+1836 662 N
+108 0 V
+-108 0 V
+Z stroke
+LT4
+1.000 1981 632 109 1 BoxColFill
+LCb setrgbcolor
+1981 632 N
+108 0 V
+-108 0 V
+Z stroke
+LT4
+1.000 2125 1113 109 1 BoxColFill
+LCb setrgbcolor
+2125 1113 N
+108 0 V
+-108 0 V
+Z stroke
+LT4
+1.000 2269 1008 109 1 BoxColFill
+LCb setrgbcolor
+2269 1008 N
+108 0 V
+-108 0 V
+Z stroke
+LT4
+1.000 2413 996 109 1 BoxColFill
+LCb setrgbcolor
+2413 996 N
+108 0 V
+-108 0 V
+Z stroke
+LT4
+1.000 2557 2043 109 1 BoxColFill
+LCb setrgbcolor
+2557 2043 N
+108 0 V
+-108 0 V
+Z stroke
+LT4
+1.000 2701 1547 109 1 BoxColFill
+LCb setrgbcolor
+2701 1547 N
+108 0 V
+-108 0 V
+Z stroke
+LT4
+1.000 2845 1421 109 1 BoxColFill
+LCb setrgbcolor
+2845 1421 N
+108 0 V
+-108 0 V
+Z stroke
+LT4
+1.000 2989 1639 109 1 BoxColFill
+LCb setrgbcolor
+2989 1639 N
+108 0 V
+-108 0 V
+Z stroke
+LT4
+1.000 3133 1211 109 1 BoxColFill
+LCb setrgbcolor
+3133 1211 N
+108 0 V
+-108 0 V
+Z stroke
+LT4
+1.000 3277 1268 109 17 BoxColFill
+LCb setrgbcolor
+3277 1268 N
+0 16 V
+108 0 V
+0 -16 V
+-108 0 V
+Z stroke
+LT4
+1.000 3421 967 109 1 BoxColFill
+LCb setrgbcolor
+3421 967 N
+108 0 V
+-108 0 V
+Z stroke
+LT4
+1.000 3565 1066 109 1 BoxColFill
+LCb setrgbcolor
+3565 1066 N
+108 0 V
+-108 0 V
+Z stroke
+LT4
+1.000 3709 1941 109 1 BoxColFill
+LCb setrgbcolor
+3709 1941 N
+108 0 V
+-108 0 V
+Z stroke
+LT4
+1.000 3853 2413 109 1 BoxColFill
+LCb setrgbcolor
+3853 2413 N
+108 0 V
+-108 0 V
+Z stroke
+LT4
+1.000 3997 2925 109 29 BoxColFill
+LCb setrgbcolor
+3997 2925 N
+0 28 V
+108 0 V
+0 -28 V
+-108 0 V
+Z stroke
+LT4
+1.000 4142 3704 109 1 BoxColFill
+LCb setrgbcolor
+4142 3704 N
+108 0 V
+-108 0 V
+Z stroke
+LT4
+1.000 4286 4151 109 1 BoxColFill
+LCb setrgbcolor
+4286 4151 N
+108 0 V
+-108 0 V
+Z stroke
+LT4
+1.000 4430 3774 109 1 BoxColFill
+LCb setrgbcolor
+4430 3774 N
+108 0 V
+-108 0 V
+Z stroke
+LT4
+1.000 4574 2924 109 1 BoxColFill
+LCb setrgbcolor
+4574 2924 N
+108 0 V
+-108 0 V
+Z stroke
+LT4
+1.000 4718 3107 109 1 BoxColFill
+LCb setrgbcolor
+4718 3107 N
+108 0 V
+-108 0 V
+Z stroke
+LT4
+1.000 4862 3666 109 2 BoxColFill
+LCb setrgbcolor
+4862 3666 N
+0 1 V
+108 0 V
+0 -1 V
+-108 0 V
+Z stroke
+LT4
+1.000 5006 3963 109 17 BoxColFill
+LCb setrgbcolor
+5006 3963 N
+0 16 V
+108 0 V
+0 -16 V
+-108 0 V
+Z stroke
+LT4
+% End plot #14
+% Begin plot #15
+1.000 UL
+LT5
+LCb setrgbcolor
+5939 3681 M
+[ [(Helvetica) 140.0 0.0 true true 0 (routing)]
+] -46.7 MLshow
+LT5
+1.000 5456 3646 399 70 BoxColFill
+LCb setrgbcolor
+5456 3646 N
+399 0 V
+0 70 V
+-399 0 V
+0 -70 V
+Z stroke
+LT5
+1.000 972 499 109 1 BoxColFill
+LCb setrgbcolor
+972 499 N
+108 0 V
+-108 0 V
+Z stroke
+LT5
+1.000 1116 623 109 88 BoxColFill
+LCb setrgbcolor
+1116 623 N
+0 87 V
+108 0 V
+0 -87 V
+-108 0 V
+Z stroke
+LT5
+1.000 1260 908 109 9 BoxColFill
+LCb setrgbcolor
+1260 908 N
+0 8 V
+108 0 V
+0 -8 V
+-108 0 V
+Z stroke
+LT5
+1.000 1404 829 109 79 BoxColFill
+LCb setrgbcolor
+1404 829 N
+0 78 V
+108 0 V
+0 -78 V
+-108 0 V
+Z stroke
+LT5
+1.000 1548 578 109 181 BoxColFill
+LCb setrgbcolor
+1548 578 N
+0 180 V
+108 0 V
+0 -180 V
+-108 0 V
+Z stroke
+LT5
+1.000 1692 567 109 152 BoxColFill
+LCb setrgbcolor
+1692 567 N
+0 151 V
+108 0 V
+0 -151 V
+-108 0 V
+Z stroke
+LT5
+1.000 1836 662 109 124 BoxColFill
+LCb setrgbcolor
+1836 662 N
+0 123 V
+108 0 V
+0 -123 V
+-108 0 V
+Z stroke
+LT5
+1.000 1981 632 109 24 BoxColFill
+LCb setrgbcolor
+1981 632 N
+0 23 V
+108 0 V
+0 -23 V
+-108 0 V
+Z stroke
+LT5
+1.000 2125 1113 109 51 BoxColFill
+LCb setrgbcolor
+2125 1113 N
+0 50 V
+108 0 V
+0 -50 V
+-108 0 V
+Z stroke
+LT5
+1.000 2269 1008 109 148 BoxColFill
+LCb setrgbcolor
+2269 1008 N
+0 147 V
+108 0 V
+0 -147 V
+-108 0 V
+Z stroke
+LT5
+1.000 2413 996 109 76 BoxColFill
+LCb setrgbcolor
+2413 996 N
+0 75 V
+108 0 V
+0 -75 V
+-108 0 V
+Z stroke
+LT5
+1.000 2557 2043 109 3 BoxColFill
+LCb setrgbcolor
+2557 2043 N
+0 2 V
+108 0 V
+0 -2 V
+-108 0 V
+Z stroke
+LT5
+1.000 2701 1547 109 12 BoxColFill
+LCb setrgbcolor
+2701 1547 N
+0 11 V
+108 0 V
+0 -11 V
+-108 0 V
+Z stroke
+LT5
+1.000 2845 1421 109 1 BoxColFill
+LCb setrgbcolor
+2845 1421 N
+108 0 V
+-108 0 V
+Z stroke
+LT5
+1.000 2989 1639 109 1 BoxColFill
+LCb setrgbcolor
+2989 1639 N
+108 0 V
+-108 0 V
+Z stroke
+LT5
+1.000 3133 1211 109 2 BoxColFill
+LCb setrgbcolor
+3133 1211 N
+0 1 V
+108 0 V
+0 -1 V
+-108 0 V
+Z stroke
+LT5
+1.000 3277 1284 109 1 BoxColFill
+LCb setrgbcolor
+3277 1284 N
+108 0 V
+-108 0 V
+Z stroke
+LT5
+1.000 3421 967 109 1 BoxColFill
+LCb setrgbcolor
+3421 967 N
+108 0 V
+-108 0 V
+Z stroke
+LT5
+1.000 3565 1066 109 28 BoxColFill
+LCb setrgbcolor
+3565 1066 N
+0 27 V
+108 0 V
+0 -27 V
+-108 0 V
+Z stroke
+LT5
+1.000 3709 1941 109 1 BoxColFill
+LCb setrgbcolor
+3709 1941 N
+108 0 V
+-108 0 V
+Z stroke
+LT5
+1.000 3853 2413 109 1 BoxColFill
+LCb setrgbcolor
+3853 2413 N
+108 0 V
+-108 0 V
+Z stroke
+LT5
+1.000 3997 2953 109 9 BoxColFill
+LCb setrgbcolor
+3997 2953 N
+0 8 V
+108 0 V
+0 -8 V
+-108 0 V
+Z stroke
+LT5
+1.000 4142 3704 109 30 BoxColFill
+LCb setrgbcolor
+4142 3704 N
+0 29 V
+108 0 V
+0 -29 V
+-108 0 V
+Z stroke
+LT5
+1.000 4286 4151 109 2 BoxColFill
+LCb setrgbcolor
+4286 4151 N
+0 1 V
+108 0 V
+0 -1 V
+-108 0 V
+Z stroke
+LT5
+1.000 4430 3774 109 5 BoxColFill
+LCb setrgbcolor
+4430 3774 N
+0 4 V
+108 0 V
+0 -4 V
+-108 0 V
+Z stroke
+LT5
+1.000 4574 2924 109 20 BoxColFill
+LCb setrgbcolor
+4574 2924 N
+0 19 V
+108 0 V
+0 -19 V
+-108 0 V
+Z stroke
+LT5
+1.000 4718 3107 109 1 BoxColFill
+LCb setrgbcolor
+4718 3107 N
+108 0 V
+-108 0 V
+Z stroke
+LT5
+1.000 4862 3667 109 10 BoxColFill
+LCb setrgbcolor
+4862 3667 N
+0 9 V
+108 0 V
+0 -9 V
+-108 0 V
+Z stroke
+LT5
+1.000 5006 3979 109 5 BoxColFill
+LCb setrgbcolor
+5006 3979 N
+0 4 V
+108 0 V
+0 -4 V
+-108 0 V
+Z stroke
+LT5
+% End plot #15
+% Begin plot #16
+1.000 UL
+LT6
+LCb setrgbcolor
+5939 3821 M
+[ [(Helvetica) 140.0 0.0 true true 0 (scanning)]
+] -46.7 MLshow
+LT6
+1.000 5456 3786 399 70 BoxColFill
+LCb setrgbcolor
+5456 3786 N
+399 0 V
+0 70 V
+-399 0 V
+0 -70 V
+Z stroke
+LT6
+1.000 972 499 109 1 BoxColFill
+LCb setrgbcolor
+972 499 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 1116 710 109 1 BoxColFill
+LCb setrgbcolor
+1116 710 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 1260 916 109 1 BoxColFill
+LCb setrgbcolor
+1260 916 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 1404 907 109 1 BoxColFill
+LCb setrgbcolor
+1404 907 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 1548 758 109 10 BoxColFill
+LCb setrgbcolor
+1548 758 N
+0 9 V
+108 0 V
+0 -9 V
+-108 0 V
+Z stroke
+LT6
+1.000 1692 718 109 412 BoxColFill
+LCb setrgbcolor
+1692 718 N
+0 411 V
+108 0 V
+0 -411 V
+-108 0 V
+Z stroke
+LT6
+1.000 1836 785 109 109 BoxColFill
+LCb setrgbcolor
+1836 785 N
+0 108 V
+108 0 V
+0 -108 V
+-108 0 V
+Z stroke
+LT6
+1.000 1981 655 109 182 BoxColFill
+LCb setrgbcolor
+1981 655 N
+0 181 V
+108 0 V
+0 -181 V
+-108 0 V
+Z stroke
+LT6
+1.000 2125 1163 109 1 BoxColFill
+LCb setrgbcolor
+2125 1163 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 2269 1155 109 1 BoxColFill
+LCb setrgbcolor
+2269 1155 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 2413 1071 109 1 BoxColFill
+LCb setrgbcolor
+2413 1071 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 2557 2045 109 1 BoxColFill
+LCb setrgbcolor
+2557 2045 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 2701 1558 109 1 BoxColFill
+LCb setrgbcolor
+2701 1558 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 2845 1421 109 1 BoxColFill
+LCb setrgbcolor
+2845 1421 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 2989 1639 109 1 BoxColFill
+LCb setrgbcolor
+2989 1639 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 3133 1212 109 1 BoxColFill
+LCb setrgbcolor
+3133 1212 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 3277 1284 109 1 BoxColFill
+LCb setrgbcolor
+3277 1284 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 3421 967 109 1 BoxColFill
+LCb setrgbcolor
+3421 967 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 3565 1093 109 1 BoxColFill
+LCb setrgbcolor
+3565 1093 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 3709 1941 109 1 BoxColFill
+LCb setrgbcolor
+3709 1941 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 3853 2413 109 1 BoxColFill
+LCb setrgbcolor
+3853 2413 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 3997 2961 109 1 BoxColFill
+LCb setrgbcolor
+3997 2961 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 4142 3733 109 1 BoxColFill
+LCb setrgbcolor
+4142 3733 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 4286 4152 109 1 BoxColFill
+LCb setrgbcolor
+4286 4152 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 4430 3778 109 1 BoxColFill
+LCb setrgbcolor
+4430 3778 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 4574 2943 109 1 BoxColFill
+LCb setrgbcolor
+4574 2943 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 4718 3107 109 1 BoxColFill
+LCb setrgbcolor
+4718 3107 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 4862 3676 109 1 BoxColFill
+LCb setrgbcolor
+4862 3676 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+1.000 5006 3983 109 1 BoxColFill
+LCb setrgbcolor
+5006 3983 N
+108 0 V
+-108 0 V
+Z stroke
+LT6
+% End plot #16
+% Begin plot #17
+1.000 UL
+LT7
+LCb setrgbcolor
+5939 3961 M
+[ [(Helvetica) 140.0 0.0 true true 0 (spam)]
+] -46.7 MLshow
+LT7
+1.000 5456 3926 399 70 BoxColFill
+LCb setrgbcolor
+5456 3926 N
+399 0 V
+0 70 V
+-399 0 V
+0 -70 V
+Z stroke
+LT7
+1.000 972 499 109 1 BoxColFill
+LCb setrgbcolor
+972 499 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 1116 710 109 1 BoxColFill
+LCb setrgbcolor
+1116 710 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 1260 916 109 1 BoxColFill
+LCb setrgbcolor
+1260 916 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 1404 907 109 1 BoxColFill
+LCb setrgbcolor
+1404 907 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 1548 767 109 1 BoxColFill
+LCb setrgbcolor
+1548 767 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 1692 1129 109 1 BoxColFill
+LCb setrgbcolor
+1692 1129 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 1836 893 109 1 BoxColFill
+LCb setrgbcolor
+1836 893 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 1981 836 109 1 BoxColFill
+LCb setrgbcolor
+1981 836 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 2125 1163 109 1 BoxColFill
+LCb setrgbcolor
+2125 1163 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 2269 1155 109 1 BoxColFill
+LCb setrgbcolor
+2269 1155 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 2413 1071 109 1 BoxColFill
+LCb setrgbcolor
+2413 1071 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 2557 2045 109 1 BoxColFill
+LCb setrgbcolor
+2557 2045 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 2701 1558 109 1 BoxColFill
+LCb setrgbcolor
+2701 1558 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 2845 1421 109 1 BoxColFill
+LCb setrgbcolor
+2845 1421 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 2989 1639 109 1 BoxColFill
+LCb setrgbcolor
+2989 1639 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 3133 1212 109 1 BoxColFill
+LCb setrgbcolor
+3133 1212 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 3277 1284 109 1 BoxColFill
+LCb setrgbcolor
+3277 1284 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 3421 967 109 43 BoxColFill
+LCb setrgbcolor
+3421 967 N
+0 42 V
+108 0 V
+0 -42 V
+-108 0 V
+Z stroke
+LT7
+1.000 3565 1093 109 1 BoxColFill
+LCb setrgbcolor
+3565 1093 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 3709 1941 109 7 BoxColFill
+LCb setrgbcolor
+3709 1941 N
+0 6 V
+108 0 V
+0 -6 V
+-108 0 V
+Z stroke
+LT7
+1.000 3853 2413 109 2 BoxColFill
+LCb setrgbcolor
+3853 2413 N
+0 1 V
+108 0 V
+0 -1 V
+-108 0 V
+Z stroke
+LT7
+1.000 3997 2961 109 1 BoxColFill
+LCb setrgbcolor
+3997 2961 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 4142 3733 109 1 BoxColFill
+LCb setrgbcolor
+4142 3733 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 4286 4152 109 1 BoxColFill
+LCb setrgbcolor
+4286 4152 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 4430 3778 109 1 BoxColFill
+LCb setrgbcolor
+4430 3778 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 4574 2943 109 1 BoxColFill
+LCb setrgbcolor
+4574 2943 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 4718 3107 109 1 BoxColFill
+LCb setrgbcolor
+4718 3107 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 4862 3676 109 1 BoxColFill
+LCb setrgbcolor
+4862 3676 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+1.000 5006 3983 109 1 BoxColFill
+LCb setrgbcolor
+5006 3983 N
+108 0 V
+-108 0 V
+Z stroke
+LT7
+% End plot #17
+% Begin plot #18
+1.000 UL
+LT8
+LCb setrgbcolor
+5939 4101 M
+[ [(Helvetica) 140.0 0.0 true true 0 (spoofing)]
+] -46.7 MLshow
+LT8
+1.000 5456 4066 399 70 BoxColFill
+LCb setrgbcolor
+5456 4066 N
+399 0 V
+0 70 V
+-399 0 V
+0 -70 V
+Z stroke
+LT8
+1.000 972 499 109 1 BoxColFill
+LCb setrgbcolor
+972 499 N
+108 0 V
+-108 0 V
+Z stroke
+LT8
+1.000 1116 710 109 1 BoxColFill
+LCb setrgbcolor
+1116 710 N
+108 0 V
+-108 0 V
+Z stroke
+LT8
+1.000 1260 916 109 1 BoxColFill
+LCb setrgbcolor
+1260 916 N
+108 0 V
+-108 0 V
+Z stroke
+LT8
+1.000 1404 907 109 1 BoxColFill
+LCb setrgbcolor
+1404 907 N
+108 0 V
+-108 0 V
+Z stroke
+LT8
+1.000 1548 767 109 1 BoxColFill
+LCb setrgbcolor
+1548 767 N
+108 0 V
+-108 0 V
+Z stroke
+LT8
+1.000 1692 1129 109 25 BoxColFill
+LCb setrgbcolor
+1692 1129 N
+0 24 V
+108 0 V
+0 -24 V
+-108 0 V
+Z stroke
+LT8
+1.000 1836 893 109 198 BoxColFill
+LCb setrgbcolor
+1836 893 N
+0 197 V
+108 0 V
+0 -197 V
+-108 0 V
+Z stroke
+LT8
+1.000 1981 836 109 1 BoxColFill
+LCb setrgbcolor
+1981 836 N
+108 0 V
+-108 0 V
+Z stroke
+LT8
+1.000 2125 1163 109 1 BoxColFill
+LCb setrgbcolor
+2125 1163 N
+108 0 V
+-108 0 V
+Z stroke
+LT8
+1.000 2269 1155 109 16 BoxColFill
+LCb setrgbcolor
+2269 1155 N
+0 15 V
+108 0 V
+0 -15 V
+-108 0 V
+Z stroke
+LT8
+1.000 2413 1071 109 197 BoxColFill
+LCb setrgbcolor
+2413 1071 N
+0 196 V
+108 0 V
+0 -196 V
+-108 0 V
+Z stroke
+LT8
+1.000 2557 2045 109 27 BoxColFill
+LCb setrgbcolor
+2557 2045 N
+0 26 V
+108 0 V
+0 -26 V
+-108 0 V
+Z stroke
+LT8
+1.000 2701 1558 109 949 BoxColFill
+LCb setrgbcolor
+2701 1558 N
+0 948 V
+108 0 V
+0 -948 V
+-108 0 V
+Z stroke
+LT8
+1.000 2845 1421 109 8 BoxColFill
+LCb setrgbcolor
+2845 1421 N
+0 7 V
+108 0 V
+0 -7 V
+-108 0 V
+Z stroke
+LT8
+1.000 2989 1639 109 17 BoxColFill
+LCb setrgbcolor
+2989 1639 N
+0 16 V
+108 0 V
+0 -16 V
+-108 0 V
+Z stroke
+LT8
+1.000 3133 1212 109 1 BoxColFill
+LCb setrgbcolor
+3133 1212 N
+108 0 V
+-108 0 V
+Z stroke
+LT8
+1.000 3277 1284 109 1 BoxColFill
+LCb setrgbcolor
+3277 1284 N
+108 0 V
+-108 0 V
+Z stroke
+LT8
+1.000 3421 1009 109 1 BoxColFill
+LCb setrgbcolor
+3421 1009 N
+108 0 V
+-108 0 V
+Z stroke
+LT8
+1.000 3565 1093 109 62 BoxColFill
+LCb setrgbcolor
+3565 1093 N
+0 61 V
+108 0 V
+0 -61 V
+-108 0 V
+Z stroke
+LT8
+1.000 3709 1947 109 336 BoxColFill
+LCb setrgbcolor
+3709 1947 N
+0 335 V
+108 0 V
+0 -335 V
+-108 0 V
+Z stroke
+LT8
+1.000 3853 2414 109 230 BoxColFill
+LCb setrgbcolor
+3853 2414 N
+0 229 V
+108 0 V
+0 -229 V
+-108 0 V
+Z stroke
+LT8
+1.000 3997 2961 109 1 BoxColFill
+LCb setrgbcolor
+3997 2961 N
+108 0 V
+-108 0 V
+Z stroke
+LT8
+1.000 4142 3733 109 2 BoxColFill
+LCb setrgbcolor
+4142 3733 N
+0 1 V
+108 0 V
+0 -1 V
+-108 0 V
+Z stroke
+LT8
+1.000 4286 4152 109 1 BoxColFill
+LCb setrgbcolor
+4286 4152 N
+108 0 V
+-108 0 V
+Z stroke
+LT8
+1.000 4430 3778 109 1 BoxColFill
+LCb setrgbcolor
+4430 3778 N
+108 0 V
+-108 0 V
+Z stroke
+LT8
+1.000 4574 2943 109 2 BoxColFill
+LCb setrgbcolor
+4574 2943 N
+0 1 V
+108 0 V
+0 -1 V
+-108 0 V
+Z stroke
+LT8
+1.000 4718 3107 109 6 BoxColFill
+LCb setrgbcolor
+4718 3107 N
+0 5 V
+108 0 V
+0 -5 V
+-108 0 V
+Z stroke
+LT8
+1.000 4862 3676 109 5 BoxColFill
+LCb setrgbcolor
+4862 3676 N
+0 4 V
+108 0 V
+0 -4 V
+-108 0 V
+Z stroke
+LT8
+1.000 5006 3983 109 10 BoxColFill
+LCb setrgbcolor
+5006 3983 N
+0 9 V
+108 0 V
+0 -9 V
+-108 0 V
+Z stroke
+LT8
+% End plot #18
+% Begin plot #19
+1.000 UL
+LT0
+LCb setrgbcolor
+5939 4241 M
+[ [(Helvetica) 140.0 0.0 true true 0 (testbeds)]
+] -46.7 MLshow
+LT0
+1.000 5456 4206 399 70 BoxColFill
+LCb setrgbcolor
+5456 4206 N
+399 0 V
+0 70 V
+-399 0 V
+0 -70 V
+Z stroke
+LT0
+1.000 972 499 109 1 BoxColFill
+LCb setrgbcolor
+972 499 N
+108 0 V
+-108 0 V
+Z stroke
+LT0
+1.000 1116 710 109 1 BoxColFill
+LCb setrgbcolor
+1116 710 N
+108 0 V
+-108 0 V
+Z stroke
+LT0
+1.000 1260 916 109 1 BoxColFill
+LCb setrgbcolor
+1260 916 N
+108 0 V
+-108 0 V
+Z stroke
+LT0
+1.000 1404 907 109 1 BoxColFill
+LCb setrgbcolor
+1404 907 N
+108 0 V
+-108 0 V
+Z stroke
+LT0
+1.000 1548 767 109 1 BoxColFill
+LCb setrgbcolor
+1548 767 N
+108 0 V
+-108 0 V
+Z stroke
+LT0
+1.000 1692 1153 109 1 BoxColFill
+LCb setrgbcolor
+1692 1153 N
+108 0 V
+-108 0 V
+Z stroke
+LT0
+1.000 1836 1090 109 1 BoxColFill
+LCb setrgbcolor
+1836 1090 N
+108 0 V
+-108 0 V
+Z stroke
+LT0
+1.000 1981 836 109 38 BoxColFill
+LCb setrgbcolor
+1981 836 N
+0 37 V
+108 0 V
+0 -37 V
+-108 0 V
+Z stroke
+LT0
+1.000 2125 1163 109 98 BoxColFill
+LCb setrgbcolor
+2125 1163 N
+0 97 V
+108 0 V
+0 -97 V
+-108 0 V
+Z stroke
+LT0
+1.000 2269 1170 109 99 BoxColFill
+LCb setrgbcolor
+2269 1170 N
+0 98 V
+108 0 V
+0 -98 V
+-108 0 V
+Z stroke
+LT0
+1.000 2413 1267 109 12 BoxColFill
+LCb setrgbcolor
+2413 1267 N
+0 11 V
+108 0 V
+0 -11 V
+-108 0 V
+Z stroke
+LT0
+1.000 2557 2071 109 4 BoxColFill
+LCb setrgbcolor
+2557 2071 N
+0 3 V
+108 0 V
+0 -3 V
+-108 0 V
+Z stroke
+LT0
+1.000 2701 2506 109 86 BoxColFill
+LCb setrgbcolor
+2701 2506 N
+0 85 V
+108 0 V
+0 -85 V
+-108 0 V
+Z stroke
+LT0
+1.000 2845 1428 109 136 BoxColFill
+LCb setrgbcolor
+2845 1428 N
+0 135 V
+108 0 V
+0 -135 V
+-108 0 V
+Z stroke
+LT0
+1.000 2989 1655 109 23 BoxColFill
+LCb setrgbcolor
+2989 1655 N
+0 22 V
+108 0 V
+0 -22 V
+-108 0 V
+Z stroke
+LT0
+1.000 3133 1212 109 1 BoxColFill
+LCb setrgbcolor
+3133 1212 N
+108 0 V
+-108 0 V
+Z stroke
+LT0
+1.000 3277 1284 109 2 BoxColFill
+LCb setrgbcolor
+3277 1284 N
+0 1 V
+108 0 V
+0 -1 V
+-108 0 V
+Z stroke
+LT0
+1.000 3421 1009 109 8 BoxColFill
+LCb setrgbcolor
+3421 1009 N
+0 7 V
+108 0 V
+0 -7 V
+-108 0 V
+Z stroke
+LT0
+1.000 3565 1154 109 48 BoxColFill
+LCb setrgbcolor
+3565 1154 N
+0 47 V
+108 0 V
+0 -47 V
+-108 0 V
+Z stroke
+LT0
+1.000 3709 2282 109 21 BoxColFill
+LCb setrgbcolor
+3709 2282 N
+0 20 V
+108 0 V
+0 -20 V
+-108 0 V
+Z stroke
+LT0
+1.000 3853 2643 109 292 BoxColFill
+LCb setrgbcolor
+3853 2643 N
+0 291 V
+108 0 V
+0 -291 V
+-108 0 V
+Z stroke
+LT0
+1.000 3997 2961 109 343 BoxColFill
+LCb setrgbcolor
+3997 2961 N
+0 342 V
+108 0 V
+0 -342 V
+-108 0 V
+Z stroke
+LT0
+1.000 4142 3734 109 116 BoxColFill
+LCb setrgbcolor
+4142 3734 N
+0 115 V
+108 0 V
+0 -115 V
+-108 0 V
+Z stroke
+LT0
+1.000 4286 4152 109 90 BoxColFill
+LCb setrgbcolor
+4286 4152 N
+0 89 V
+108 0 V
+0 -89 V
+-108 0 V
+Z stroke
+LT0
+1.000 4430 3778 109 269 BoxColFill
+LCb setrgbcolor
+4430 3778 N
+0 268 V
+108 0 V
+0 -268 V
+-108 0 V
+Z stroke
+LT0
+1.000 4574 2944 109 226 BoxColFill
+LCb setrgbcolor
+4574 2944 N
+0 225 V
+108 0 V
+0 -225 V
+-108 0 V
+Z stroke
+LT0
+1.000 4718 3112 109 626 BoxColFill
+LCb setrgbcolor
+4718 3112 N
+0 625 V
+108 0 V
+0 -625 V
+-108 0 V
+Z stroke
+LT0
+1.000 4862 3680 109 73 BoxColFill
+LCb setrgbcolor
+4862 3680 N
+0 72 V
+108 0 V
+0 -72 V
+-108 0 V
+Z stroke
+LT0
+1.000 5006 3992 109 50 BoxColFill
+LCb setrgbcolor
+5006 3992 N
+0 49 V
+108 0 V
+0 -49 V
+-108 0 V
+Z stroke
+LT0
+% End plot #19
+% Begin plot #20
+1.000 UL
+LT1
+LCb setrgbcolor
+5939 4381 M
+[ [(Helvetica) 140.0 0.0 true true 0 (traceback)]
+] -46.7 MLshow
+LT1
+1.000 5456 4346 399 70 BoxColFill
+LCb setrgbcolor
+5456 4346 N
+399 0 V
+0 70 V
+-399 0 V
+0 -70 V
+Z stroke
+LT1
+1.000 972 499 109 1 BoxColFill
+LCb setrgbcolor
+972 499 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 1116 710 109 1 BoxColFill
+LCb setrgbcolor
+1116 710 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 1260 916 109 1 BoxColFill
+LCb setrgbcolor
+1260 916 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 1404 907 109 77 BoxColFill
+LCb setrgbcolor
+1404 907 N
+0 76 V
+108 0 V
+0 -76 V
+-108 0 V
+Z stroke
+LT1
+1.000 1548 767 109 171 BoxColFill
+LCb setrgbcolor
+1548 767 N
+0 170 V
+108 0 V
+0 -170 V
+-108 0 V
+Z stroke
+LT1
+1.000 1692 1153 109 1 BoxColFill
+LCb setrgbcolor
+1692 1153 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 1836 1090 109 3 BoxColFill
+LCb setrgbcolor
+1836 1090 N
+0 2 V
+108 0 V
+0 -2 V
+-108 0 V
+Z stroke
+LT1
+1.000 1981 873 109 1 BoxColFill
+LCb setrgbcolor
+1981 873 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 2125 1260 109 2 BoxColFill
+LCb setrgbcolor
+2125 1260 N
+0 1 V
+108 0 V
+0 -1 V
+-108 0 V
+Z stroke
+LT1
+1.000 2269 1268 109 1 BoxColFill
+LCb setrgbcolor
+2269 1268 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 2413 1278 109 1 BoxColFill
+LCb setrgbcolor
+2413 1278 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 2557 2074 109 1 BoxColFill
+LCb setrgbcolor
+2557 2074 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 2701 2591 109 1 BoxColFill
+LCb setrgbcolor
+2701 2591 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 2845 1563 109 1 BoxColFill
+LCb setrgbcolor
+2845 1563 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 2989 1677 109 1 BoxColFill
+LCb setrgbcolor
+2989 1677 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 3133 1212 109 1 BoxColFill
+LCb setrgbcolor
+3133 1212 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 3277 1285 109 1 BoxColFill
+LCb setrgbcolor
+3277 1285 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 3421 1016 109 1 BoxColFill
+LCb setrgbcolor
+3421 1016 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 3565 1201 109 1 BoxColFill
+LCb setrgbcolor
+3565 1201 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 3709 2302 109 1 BoxColFill
+LCb setrgbcolor
+3709 2302 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 3853 2934 109 1 BoxColFill
+LCb setrgbcolor
+3853 2934 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 3997 3303 109 1 BoxColFill
+LCb setrgbcolor
+3997 3303 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 4142 3849 109 1 BoxColFill
+LCb setrgbcolor
+4142 3849 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 4286 4241 109 1 BoxColFill
+LCb setrgbcolor
+4286 4241 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 4430 4046 109 1 BoxColFill
+LCb setrgbcolor
+4430 4046 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 4574 3169 109 1 BoxColFill
+LCb setrgbcolor
+4574 3169 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 4718 3737 109 1 BoxColFill
+LCb setrgbcolor
+4718 3737 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 4862 3752 109 1 BoxColFill
+LCb setrgbcolor
+4862 3752 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+1.000 5006 4041 109 1 BoxColFill
+LCb setrgbcolor
+5006 4041 N
+108 0 V
+-108 0 V
+Z stroke
+LT1
+% End plot #20
+% Begin plot #21
+1.000 UL
+LT2
+LCb setrgbcolor
+5939 4521 M
+[ [(Helvetica) 140.0 0.0 true true 0 (watermarking)]
+] -46.7 MLshow
+LT2
+1.000 5456 4486 399 70 BoxColFill
+LCb setrgbcolor
+5456 4486 N
+399 0 V
+0 70 V
+-399 0 V
+0 -70 V
+Z stroke
+LT2
+1.000 972 499 109 1 BoxColFill
+LCb setrgbcolor
+972 499 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 1116 710 109 1 BoxColFill
+LCb setrgbcolor
+1116 710 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 1260 916 109 1 BoxColFill
+LCb setrgbcolor
+1260 916 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 1404 983 109 1 BoxColFill
+LCb setrgbcolor
+1404 983 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 1548 937 109 1 BoxColFill
+LCb setrgbcolor
+1548 937 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 1692 1153 109 1 BoxColFill
+LCb setrgbcolor
+1692 1153 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 1836 1092 109 1 BoxColFill
+LCb setrgbcolor
+1836 1092 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 1981 873 109 1 BoxColFill
+LCb setrgbcolor
+1981 873 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 2125 1261 109 1 BoxColFill
+LCb setrgbcolor
+2125 1261 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 2269 1268 109 1 BoxColFill
+LCb setrgbcolor
+2269 1268 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 2413 1278 109 257 BoxColFill
+LCb setrgbcolor
+2413 1278 N
+0 256 V
+108 0 V
+0 -256 V
+-108 0 V
+Z stroke
+LT2
+1.000 2557 2074 109 389 BoxColFill
+LCb setrgbcolor
+2557 2074 N
+0 388 V
+108 0 V
+0 -388 V
+-108 0 V
+Z stroke
+LT2
+1.000 2701 2591 109 341 BoxColFill
+LCb setrgbcolor
+2701 2591 N
+0 340 V
+108 0 V
+0 -340 V
+-108 0 V
+Z stroke
+LT2
+1.000 2845 1563 109 345 BoxColFill
+LCb setrgbcolor
+2845 1563 N
+0 344 V
+108 0 V
+0 -344 V
+-108 0 V
+Z stroke
+LT2
+1.000 2989 1677 109 348 BoxColFill
+LCb setrgbcolor
+2989 1677 N
+0 347 V
+108 0 V
+0 -347 V
+-108 0 V
+Z stroke
+LT2
+1.000 3133 1212 109 26 BoxColFill
+LCb setrgbcolor
+3133 1212 N
+0 25 V
+108 0 V
+0 -25 V
+-108 0 V
+Z stroke
+LT2
+1.000 3277 1285 109 1 BoxColFill
+LCb setrgbcolor
+3277 1285 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 3421 1016 109 1 BoxColFill
+LCb setrgbcolor
+3421 1016 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 3565 1201 109 1 BoxColFill
+LCb setrgbcolor
+3565 1201 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 3709 2302 109 1 BoxColFill
+LCb setrgbcolor
+3709 2302 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 3853 2934 109 1 BoxColFill
+LCb setrgbcolor
+3853 2934 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 3997 3303 109 1 BoxColFill
+LCb setrgbcolor
+3997 3303 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 4142 3849 109 1 BoxColFill
+LCb setrgbcolor
+4142 3849 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 4286 4241 109 1 BoxColFill
+LCb setrgbcolor
+4286 4241 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 4430 4046 109 1 BoxColFill
+LCb setrgbcolor
+4430 4046 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 4574 3169 109 1 BoxColFill
+LCb setrgbcolor
+4574 3169 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 4718 3737 109 1 BoxColFill
+LCb setrgbcolor
+4718 3737 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 4862 3752 109 1 BoxColFill
+LCb setrgbcolor
+4862 3752 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+1.000 5006 4041 109 1 BoxColFill
+LCb setrgbcolor
+5006 4041 N
+108 0 V
+-108 0 V
+Z stroke
+LT2
+% End plot #21
+% Begin plot #22
+1.000 UL
+LT3
+LCb setrgbcolor
+5939 4661 M
+[ [(Helvetica) 140.0 0.0 true true 0 (wireless)]
+] -46.7 MLshow
+LT3
+1.000 5456 4626 399 70 BoxColFill
+LCb setrgbcolor
+5456 4626 N
+399 0 V
+0 70 V
+-399 0 V
+0 -70 V
+Z stroke
+LT3
+1.000 972 499 109 1 BoxColFill
+LCb setrgbcolor
+972 499 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 1116 710 109 1 BoxColFill
+LCb setrgbcolor
+1116 710 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 1260 916 109 1 BoxColFill
+LCb setrgbcolor
+1260 916 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 1404 983 109 1 BoxColFill
+LCb setrgbcolor
+1404 983 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 1548 937 109 1 BoxColFill
+LCb setrgbcolor
+1548 937 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 1692 1153 109 1 BoxColFill
+LCb setrgbcolor
+1692 1153 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 1836 1092 109 1 BoxColFill
+LCb setrgbcolor
+1836 1092 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 1981 873 109 1 BoxColFill
+LCb setrgbcolor
+1981 873 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 2125 1261 109 1 BoxColFill
+LCb setrgbcolor
+2125 1261 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 2269 1268 109 1 BoxColFill
+LCb setrgbcolor
+2269 1268 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 2413 1534 109 1 BoxColFill
+LCb setrgbcolor
+2413 1534 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 2557 2462 109 1 BoxColFill
+LCb setrgbcolor
+2557 2462 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 2701 2931 109 1 BoxColFill
+LCb setrgbcolor
+2701 2931 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 2845 1907 109 1 BoxColFill
+LCb setrgbcolor
+2845 1907 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 2989 2024 109 68 BoxColFill
+LCb setrgbcolor
+2989 2024 N
+0 67 V
+108 0 V
+0 -67 V
+-108 0 V
+Z stroke
+LT3
+1.000 3133 1237 109 678 BoxColFill
+LCb setrgbcolor
+3133 1237 N
+0 677 V
+108 0 V
+0 -677 V
+-108 0 V
+Z stroke
+LT3
+1.000 3277 1285 109 347 BoxColFill
+LCb setrgbcolor
+3277 1285 N
+0 346 V
+108 0 V
+0 -346 V
+-108 0 V
+Z stroke
+LT3
+1.000 3421 1016 109 857 BoxColFill
+LCb setrgbcolor
+3421 1016 N
+0 856 V
+108 0 V
+0 -856 V
+-108 0 V
+Z stroke
+LT3
+1.000 3565 1201 109 1012 BoxColFill
+LCb setrgbcolor
+3565 1201 N
+0 1011 V
+108 0 V
+0 -1011 V
+-108 0 V
+Z stroke
+LT3
+1.000 3709 2302 109 408 BoxColFill
+LCb setrgbcolor
+3709 2302 N
+0 407 V
+108 0 V
+0 -407 V
+-108 0 V
+Z stroke
+LT3
+1.000 3853 2934 109 5 BoxColFill
+LCb setrgbcolor
+3853 2934 N
+0 4 V
+108 0 V
+0 -4 V
+-108 0 V
+Z stroke
+LT3
+1.000 3997 3303 109 15 BoxColFill
+LCb setrgbcolor
+3997 3303 N
+0 14 V
+108 0 V
+0 -14 V
+-108 0 V
+Z stroke
+LT3
+1.000 4142 3849 109 237 BoxColFill
+LCb setrgbcolor
+4142 3849 N
+0 236 V
+108 0 V
+0 -236 V
+-108 0 V
+Z stroke
+LT3
+1.000 4286 4241 109 13 BoxColFill
+LCb setrgbcolor
+4286 4241 N
+0 12 V
+108 0 V
+0 -12 V
+-108 0 V
+Z stroke
+LT3
+1.000 4430 4046 109 2 BoxColFill
+LCb setrgbcolor
+4430 4046 N
+0 1 V
+108 0 V
+0 -1 V
+-108 0 V
+Z stroke
+LT3
+1.000 4574 3169 109 1 BoxColFill
+LCb setrgbcolor
+4574 3169 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 4718 3737 109 1 BoxColFill
+LCb setrgbcolor
+4718 3737 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 4862 3752 109 1 BoxColFill
+LCb setrgbcolor
+4862 3752 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+1.000 5006 4041 109 1 BoxColFill
+LCb setrgbcolor
+5006 4041 N
+108 0 V
+-108 0 V
+Z stroke
+LT3
+% End plot #22
+% Begin plot #23
+1.000 UL
+LT4
+LCb setrgbcolor
+5939 4801 M
+[ [(Helvetica) 140.0 0.0 true true 0 (worms)]
+] -46.7 MLshow
+LT4
+1.000 5456 4766 399 70 BoxColFill
+LCb setrgbcolor
+5456 4766 N
+399 0 V
+0 70 V
+-399 0 V
+0 -70 V
+Z stroke
+LT4
+1.000 1116 499 109 184 BoxColFill
+LCb setrgbcolor
+1116 499 N
+0 183 V
+108 0 V
+0 -183 V
+-108 0 V
+Z stroke
+LT4
+1.000 1260 710 109 191 BoxColFill
+LCb setrgbcolor
+1260 710 N
+0 190 V
+108 0 V
+0 -190 V
+-108 0 V
+Z stroke
+LT4
+1.000 1404 916 109 150 BoxColFill
+LCb setrgbcolor
+1404 916 N
+0 149 V
+108 0 V
+0 -149 V
+-108 0 V
+Z stroke
+LT4
+1.000 1548 983 109 193 BoxColFill
+LCb setrgbcolor
+1548 983 N
+0 192 V
+108 0 V
+0 -192 V
+-108 0 V
+Z stroke
+LT4
+1.000 1692 937 109 101 BoxColFill
+LCb setrgbcolor
+1692 937 N
+0 100 V
+108 0 V
+0 -100 V
+-108 0 V
+Z stroke
+LT4
+1.000 1836 1153 109 129 BoxColFill
+LCb setrgbcolor
+1836 1153 N
+0 128 V
+108 0 V
+0 -128 V
+-108 0 V
+Z stroke
+LT4
+1.000 1981 1092 109 187 BoxColFill
+LCb setrgbcolor
+1981 1092 N
+0 186 V
+108 0 V
+0 -186 V
+-108 0 V
+Z stroke
+LT4
+1.000 2125 873 109 466 BoxColFill
+LCb setrgbcolor
+2125 873 N
+0 465 V
+108 0 V
+0 -465 V
+-108 0 V
+Z stroke
+LT4
+1.000 2269 1261 109 1195 BoxColFill
+LCb setrgbcolor
+2269 1261 N
+0 1194 V
+108 0 V
+0 -1194 V
+-108 0 V
+Z stroke
+LT4
+1.000 2413 1268 109 214 BoxColFill
+LCb setrgbcolor
+2413 1268 N
+0 213 V
+108 0 V
+0 -213 V
+-108 0 V
+Z stroke
+LT4
+1.000 2557 1534 109 201 BoxColFill
+LCb setrgbcolor
+2557 1534 N
+0 200 V
+108 0 V
+0 -200 V
+-108 0 V
+Z stroke
+LT4
+1.000 2701 2462 109 149 BoxColFill
+LCb setrgbcolor
+2701 2462 N
+0 148 V
+108 0 V
+0 -148 V
+-108 0 V
+Z stroke
+LT4
+1.000 2845 2931 109 208 BoxColFill
+LCb setrgbcolor
+2845 2931 N
+0 207 V
+108 0 V
+0 -207 V
+-108 0 V
+Z stroke
+LT4
+1.000 2989 1907 109 147 BoxColFill
+LCb setrgbcolor
+2989 1907 N
+0 146 V
+108 0 V
+0 -146 V
+-108 0 V
+Z stroke
+LT4
+1.000 3133 2091 109 6 BoxColFill
+LCb setrgbcolor
+3133 2091 N
+0 5 V
+108 0 V
+0 -5 V
+-108 0 V
+Z stroke
+LT4
+1.000 3277 1914 109 12 BoxColFill
+LCb setrgbcolor
+3277 1914 N
+0 11 V
+108 0 V
+0 -11 V
+-108 0 V
+Z stroke
+LT4
+1.000 3421 1631 109 12 BoxColFill
+LCb setrgbcolor
+3421 1631 N
+0 11 V
+108 0 V
+0 -11 V
+-108 0 V
+Z stroke
+LT4
+1.000 3565 1872 109 5 BoxColFill
+LCb setrgbcolor
+3565 1872 N
+0 4 V
+108 0 V
+0 -4 V
+-108 0 V
+Z stroke
+LT4
+1.000 3709 2212 109 3 BoxColFill
+LCb setrgbcolor
+3709 2212 N
+0 2 V
+108 0 V
+0 -2 V
+-108 0 V
+Z stroke
+LT4
+1.000 3853 2709 109 18 BoxColFill
+LCb setrgbcolor
+3853 2709 N
+0 17 V
+108 0 V
+0 -17 V
+-108 0 V
+Z stroke
+LT4
+1.000 3997 2938 109 24 BoxColFill
+LCb setrgbcolor
+3997 2938 N
+0 23 V
+108 0 V
+0 -23 V
+-108 0 V
+Z stroke
+LT4
+1.000 4142 3317 109 1 BoxColFill
+LCb setrgbcolor
+4142 3317 N
+108 0 V
+-108 0 V
+Z stroke
+LT4
+1.000 4286 4085 109 1 BoxColFill
+LCb setrgbcolor
+4286 4085 N
+108 0 V
+-108 0 V
+Z stroke
+LT4
+1.000 4430 4253 109 1 BoxColFill
+LCb setrgbcolor
+4430 4253 N
+108 0 V
+-108 0 V
+Z stroke
+LT4
+1.000 4574 4047 109 1 BoxColFill
+LCb setrgbcolor
+4574 4047 N
+108 0 V
+-108 0 V
+Z stroke
+LT4
+1.000 4718 3169 109 1 BoxColFill
+LCb setrgbcolor
+4718 3169 N
+108 0 V
+-108 0 V
+Z stroke
+LT4
+1.000 4862 3737 109 1 BoxColFill
+LCb setrgbcolor
+4862 3737 N
+108 0 V
+-108 0 V
+Z stroke
+LT4
+1.000 5006 3752 109 1 BoxColFill
+LCb setrgbcolor
+5006 3752 N
+108 0 V
+-108 0 V
+Z stroke
+LT4
+% End plot #23
+1.000 UL
+LTb
+882 4871 N
+882 496 L
+4322 0 V
+0 4375 V
+-4322 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+stroke
+grestore
+end
+showpage
+%%Page: 2 2
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.100 0.100 scale
+90 rotate
+0 -5040 translate
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+1.000 UL
+LTb
+0 0 M
+7199 0 L
+0 5039 V
+0 5039 L
+0 0 L
+stroke
+LT0
+168 4970 M
+[ [(Helvetica) 140.0 0.0 true true 0 (postscript  terminal test)]
+] -46.7 MLshow
+LTb
+LTa
+3600 0 M
+0 5039 V
+0 2520 M
+7199 0 V
+stroke
+LT3
+2760 2590 M
+1680 0 V
+0 -140 V
+-1680 0 V
+0 140 V
+stroke
+2760 2520 M
+[ [(Helvetica) 140.0 0.0 true true 0 (12345678901234567890)]
+] -46.7 MLshow
+2760 2716 M
+[ [(Helvetica) 140.0 0.0 true true 0 (test of character width:)]
+] -46.7 MLshow
+LTb
+3600 2016 M
+[ [(Helvetica) 140.0 0.0 true true 0 (Enhanced text:   )]
+[(Helvetica) 140.0 0.0 true true 0 (x)]
+XYsave
+[(Helvetica) 112.0 -42.0 true true 0 (0)]
+XYrestore
+[(Helvetica) 112.0 70.0 true true 0 (n+1)]
+] -46.7 MLshow
+3600 3360 M
+[ [(Helvetica) 140.0 0.0 true true 0 (left justified)]
+] -46.7 MLshow
+3600 3220 M
+[ [(Helvetica) 140.0 0.0 true true 0 (centre+d text)]
+] -46.7 MCshow
+3600 3080 M
+[ [(Helvetica) 140.0 0.0 true true 0 (right justified)]
+] -46.7 MRshow
+LT1
+140 2520 M
+currentpoint gsave translate -270 rotate 0 0 moveto
+[ [(Helvetica) 140.0 0.0 true true 0 (rotated ce+ntred text)]
+] -46.7 MCshow
+grestore
+420 2520 M
+currentpoint gsave translate 45 rotate 0 0 moveto
+[ [(Helvetica) 140.0 0.0 true true 0 ( rotated by +45 deg)]
+] -46.7 MLshow
+grestore
+280 2520 M
+currentpoint gsave translate -45 rotate 0 0 moveto
+[ [(Helvetica) 140.0 0.0 true true 0 ( rotated by -45 deg)]
+] -46.7 MLshow
+grestore
+LTb
+LT4
+3663 5039 M
+0 1 V
+-63 -63 R
+stroke
+3516 4844 M
+[ [(Helvetica) 140.0 0.0 true true 0 (show ticscale)]
+] -46.7 MRshow
+LTb
+1.000 UP
+1.000 UL
+LTb
+6633 4900 M
+[ [(Helvetica) 140.0 0.0 true true 0 (-1)]
+] -46.7 MRshow
+6717 4900 M
+252 0 V
+stroke
+LTa
+6633 4760 M
+[ [(Helvetica) 140.0 0.0 true true 0 (0)]
+] -46.7 MRshow
+6717 4760 M
+252 0 V
+7084 4760 Pnt
+1.000 UL
+LT0
+6633 4620 M
+[ [(Helvetica) 140.0 0.0 true true 0 (1)]
+] -46.7 MRshow
+6717 4620 M
+252 0 V
+7084 4620 Pls
+1.000 UL
+LT1
+6633 4480 M
+[ [(Helvetica) 140.0 0.0 true true 0 (2)]
+] -46.7 MRshow
+6717 4480 M
+252 0 V
+7084 4480 Crs
+1.000 UL
+LT2
+6633 4340 M
+[ [(Helvetica) 140.0 0.0 true true 0 (3)]
+] -46.7 MRshow
+6717 4340 M
+252 0 V
+7084 4340 Star
+1.000 UL
+LT3
+6633 4200 M
+[ [(Helvetica) 140.0 0.0 true true 0 (4)]
+] -46.7 MRshow
+6717 4200 M
+252 0 V
+7084 4200 Box
+1.000 UL
+LT4
+6633 4060 M
+[ [(Helvetica) 140.0 0.0 true true 0 (5)]
+] -46.7 MRshow
+6717 4060 M
+252 0 V
+7084 4060 BoxF
+1.000 UL
+LT5
+6633 3920 M
+[ [(Helvetica) 140.0 0.0 true true 0 (6)]
+] -46.7 MRshow
+6717 3920 M
+252 0 V
+7084 3920 Circle
+1.000 UL
+LT6
+6633 3780 M
+[ [(Helvetica) 140.0 0.0 true true 0 (7)]
+] -46.7 MRshow
+6717 3780 M
+252 0 V
+7084 3780 CircleF
+1.000 UL
+LT7
+6633 3640 M
+[ [(Helvetica) 140.0 0.0 true true 0 (8)]
+] -46.7 MRshow
+6717 3640 M
+252 0 V
+7084 3640 TriU
+1.000 UL
+LT8
+6633 3500 M
+[ [(Helvetica) 140.0 0.0 true true 0 (9)]
+] -46.7 MRshow
+6717 3500 M
+252 0 V
+7084 3500 TriUF
+1.000 UL
+LT0
+6633 3360 M
+[ [(Helvetica) 140.0 0.0 true true 0 (10)]
+] -46.7 MRshow
+6717 3360 M
+252 0 V
+7084 3360 TriD
+1.000 UL
+LT1
+6633 3220 M
+[ [(Helvetica) 140.0 0.0 true true 0 (11)]
+] -46.7 MRshow
+6717 3220 M
+252 0 V
+7084 3220 TriDF
+1.000 UL
+LT2
+6633 3080 M
+[ [(Helvetica) 140.0 0.0 true true 0 (12)]
+] -46.7 MRshow
+6717 3080 M
+252 0 V
+7084 3080 Dia
+1.000 UL
+LT3
+6633 2940 M
+[ [(Helvetica) 140.0 0.0 true true 0 (13)]
+] -46.7 MRshow
+6717 2940 M
+252 0 V
+7084 2940 DiaF
+1.000 UL
+LT4
+6633 2800 M
+[ [(Helvetica) 140.0 0.0 true true 0 (14)]
+] -46.7 MRshow
+6717 2800 M
+252 0 V
+7084 2800 Pent
+1.000 UL
+LT5
+6633 2660 M
+[ [(Helvetica) 140.0 0.0 true true 0 (15)]
+] -46.7 MRshow
+6717 2660 M
+252 0 V
+7084 2660 PentF
+1.000 UL
+LT6
+6633 2520 M
+[ [(Helvetica) 140.0 0.0 true true 0 (16)]
+] -46.7 MRshow
+6717 2520 M
+252 0 V
+7084 2520 C0
+1.000 UL
+LT7
+6633 2380 M
+[ [(Helvetica) 140.0 0.0 true true 0 (17)]
+] -46.7 MRshow
+6717 2380 M
+252 0 V
+7084 2380 C1
+1.000 UL
+LT8
+6633 2240 M
+[ [(Helvetica) 140.0 0.0 true true 0 (18)]
+] -46.7 MRshow
+6717 2240 M
+252 0 V
+7084 2240 C2
+1.000 UL
+LT0
+6633 2100 M
+[ [(Helvetica) 140.0 0.0 true true 0 (19)]
+] -46.7 MRshow
+6717 2100 M
+252 0 V
+7084 2100 C3
+1.000 UL
+LT1
+6633 1960 M
+[ [(Helvetica) 140.0 0.0 true true 0 (20)]
+] -46.7 MRshow
+6717 1960 M
+252 0 V
+7084 1960 C4
+1.000 UL
+LT2
+6633 1820 M
+[ [(Helvetica) 140.0 0.0 true true 0 (21)]
+] -46.7 MRshow
+6717 1820 M
+252 0 V
+7084 1820 C5
+1.000 UL
+LT3
+6633 1680 M
+[ [(Helvetica) 140.0 0.0 true true 0 (22)]
+] -46.7 MRshow
+6717 1680 M
+252 0 V
+7084 1680 C6
+1.000 UL
+LT4
+6633 1540 M
+[ [(Helvetica) 140.0 0.0 true true 0 (23)]
+] -46.7 MRshow
+6717 1540 M
+252 0 V
+7084 1540 C7
+1.000 UL
+LT5
+6633 1400 M
+[ [(Helvetica) 140.0 0.0 true true 0 (24)]
+] -46.7 MRshow
+6717 1400 M
+252 0 V
+7084 1400 C8
+1.000 UL
+LT6
+6633 1260 M
+[ [(Helvetica) 140.0 0.0 true true 0 (25)]
+] -46.7 MRshow
+6717 1260 M
+252 0 V
+7084 1260 C9
+1.000 UL
+LT7
+6633 1120 M
+[ [(Helvetica) 140.0 0.0 true true 0 (26)]
+] -46.7 MRshow
+6717 1120 M
+252 0 V
+7084 1120 C10
+1.000 UL
+LT8
+6633 980 M
+[ [(Helvetica) 140.0 0.0 true true 0 (27)]
+] -46.7 MRshow
+6717 980 M
+252 0 V
+7084 980 C11
+1.000 UL
+LT0
+6633 840 M
+[ [(Helvetica) 140.0 0.0 true true 0 (28)]
+] -46.7 MRshow
+6717 840 M
+252 0 V
+7084 840 C12
+1.000 UL
+LT1
+6633 700 M
+[ [(Helvetica) 140.0 0.0 true true 0 (29)]
+] -46.7 MRshow
+6717 700 M
+252 0 V
+7084 700 C13
+1.000 UL
+LT2
+6633 560 M
+[ [(Helvetica) 140.0 0.0 true true 0 (30)]
+] -46.7 MRshow
+6717 560 M
+252 0 V
+7084 560 C14
+1.000 UL
+LT3
+6633 420 M
+[ [(Helvetica) 140.0 0.0 true true 0 (31)]
+] -46.7 MRshow
+6717 420 M
+252 0 V
+7084 420 C15
+1.000 UL
+LT4
+6633 280 M
+[ [(Helvetica) 140.0 0.0 true true 0 (32)]
+] -46.7 MRshow
+6717 280 M
+252 0 V
+7084 280 S0
+1.000 UL
+LT0
+3020 1228 M
+121 32 V
+-121 32 V
+-320 -32 R
+441 0 V
+stroke
+gsave [] 0 setdash
+3020 1228 M
+121 32 V
+-121 32 V
+stroke
+grestore
+2380 1260 M
+0 32 V
+-121 -32 V
+121 -32 V
+0 32 V
+320 0 R
+-320 0 V
+stroke
+gsave [] 0 setdash
+2380 1260 M
+0 32 V
+-121 -32 V
+121 -32 V
+0 32 V
+stroke
+grestore
+gsave 2700 1580 N 32 0 V -32 121 V -32 -121 V 32 0 V 1 PolyFill
+2700 1580 M
+32 0 V
+-32 121 V
+-32 -121 V
+32 0 V
+0 -320 R
+0 320 V
+stroke
+gsave [] 0 setdash
+gsave 2700 1580 N 32 0 V -32 121 V -32 -121 V 32 0 V 1 PolyFill
+2700 1580 M
+32 0 V
+-32 121 V
+-32 -121 V
+32 0 V
+stroke
+grestore
+2700 940 M
+-32 0 V
+32 -121 V
+32 121 V
+-32 0 V
+0 320 R
+0 -320 V
+stroke
+gsave [] 0 setdash
+2700 940 M
+-32 0 V
+32 -121 V
+32 121 V
+-32 0 V
+stroke
+grestore
+2952 1466 M
+63 109 V
+-109 -63 V
+2494 1008 M
+2385 945 L
+63 109 V
+2385 945 M
+630 630 V
+stroke
+gsave [] 0 setdash
+2952 1466 M
+63 109 V
+-109 -63 V
+2494 1008 M
+2385 945 L
+63 109 V
+stroke
+grestore
+2385 1575 M
+315 -315 V
+86 -86 R
+-23 -23 V
+-63 109 V
+109 -63 V
+-23 -23 V
+3015 945 L
+stroke
+gsave [] 0 setdash
+2786 1174 M
+-23 -23 V
+-63 109 V
+109 -63 V
+-23 -23 V
+stroke
+grestore
+1.000 UL
+LTb
+540 201 M
+720 0 V
+stroke
+1260 201 M
+[ [(Helvetica) 140.0 0.0 true true 0 (  lw 1)]
+] -46.7 MLshow
+2.000 UL
+LTb
+540 402 M
+720 0 V
+stroke
+1260 402 M
+[ [(Helvetica) 140.0 0.0 true true 0 (  lw 2)]
+] -46.7 MLshow
+3.000 UL
+LTb
+540 603 M
+720 0 V
+stroke
+1260 603 M
+[ [(Helvetica) 140.0 0.0 true true 0 (  lw 3)]
+] -46.7 MLshow
+4.000 UL
+LTb
+540 804 M
+720 0 V
+stroke
+1260 804 M
+[ [(Helvetica) 140.0 0.0 true true 0 (  lw 4)]
+] -46.7 MLshow
+5.000 UL
+LTb
+540 1005 M
+720 0 V
+stroke
+1260 1005 M
+[ [(Helvetica) 140.0 0.0 true true 0 (  lw 5)]
+] -46.7 MLshow
+6.000 UL
+LTb
+540 1206 M
+720 0 V
+stroke
+1260 1206 M
+[ [(Helvetica) 140.0 0.0 true true 0 (  lw 6)]
+] -46.7 MLshow
+540 1407 M
+[ [(Helvetica) 140.0 0.0 true true 0 (linewidth)]
+] -46.7 MLshow
+1.000 UL
+LTb
+4860 840 M
+[ [(Helvetica) 140.0 0.0 true true 0 (pattern fill)]
+] -46.7 MCshow
+3600 0 180 630 BoxFill
+3600 0 M
+0 630 V
+180 0 V
+3780 0 L
+3600 0 L
+stroke
+3690 700 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 0)]
+] -46.7 MCshow
+3870 0 180 630 80 -45 1 PatternFill
+3870 0 M
+0 630 V
+180 0 V
+4050 0 L
+3870 0 L
+stroke
+3960 700 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 1)]
+] -46.7 MCshow
+4140 0 180 630 40 45 2 PatternFill
+4140 0 M
+0 630 V
+180 0 V
+4320 0 L
+4140 0 L
+stroke
+4230 700 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 2)]
+] -46.7 MCshow
+1 4410 0 180 630 BoxColFill
+4410 0 M
+0 630 V
+180 0 V
+4590 0 L
+4410 0 L
+stroke
+4500 700 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 3)]
+] -46.7 MCshow
+4680 0 180 630 80 45 0 PatternFill
+4680 0 M
+0 630 V
+180 0 V
+4860 0 L
+4680 0 L
+stroke
+4770 700 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 4)]
+] -46.7 MCshow
+4950 0 180 630 80 -45 0 PatternFill
+4950 0 M
+0 630 V
+180 0 V
+5130 0 L
+4950 0 L
+stroke
+5040 700 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 5)]
+] -46.7 MCshow
+5220 0 180 630 40 30 0 PatternFill
+5220 0 M
+0 630 V
+180 0 V
+5400 0 L
+5220 0 L
+stroke
+5310 700 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 6)]
+] -46.7 MCshow
+5490 0 180 630 40 -30 0 PatternFill
+5490 0 M
+0 630 V
+180 0 V
+5670 0 L
+5490 0 L
+stroke
+5580 700 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 7)]
+] -46.7 MCshow
+5760 0 180 630 BoxFill
+5760 0 M
+0 630 V
+180 0 V
+5940 0 L
+5760 0 L
+stroke
+5850 700 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 8)]
+] -46.7 MCshow
+6030 0 180 630 80 -45 1 PatternFill
+6030 0 M
+0 630 V
+180 0 V
+6210 0 L
+6030 0 L
+stroke
+6120 700 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 9)]
+] -46.7 MCshow
+LT2
+gsave 5400 4183 N -180 311 V -360 0 V -180 -311 V 180 -312 V 360 0 V 180 312 V 1 PolyFill
+LT1
+gsave 5760 4003 N -180 311 V -360 0 V -180 -311 V 180 -312 V 360 0 V 180 312 V 0.50 PolyFill
+LTb
+5040 4613 M
+[ [(Helvetica) 140.0 0.0 true true 0 (filled polygons:)]
+] -46.7 MCshow
+stroke
+grestore
+end
+showpage
+%%Trailer
+%%DocumentFonts: Helvetica
+%%Pages: 2

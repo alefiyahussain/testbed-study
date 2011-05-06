@@ -1,0 +1,79 @@
+% $Id: paper.tex 785 2005-06-16 15:51:29Z hussain $
+
+%\documentclass{sig-alternate}
+\documentclass{sig-alt-nocopy}
+% to go back to 9pt, do sig-alt-nocopy
+%\documentclass{sigplan-proc-10pt}
+
+% hack to avoid the ugly ACM paragraph definition
+% => can't leave blank line after this
+\renewcommand{\paragraph}[1]{\vskip 6pt\noindent\textbf{#1 }}
+
+%
+% Kannan's suggestions about maximizing floats:
+% (images)
+%
+\newcommand{\RelaxFloats}{
+	\renewcommand{\topfraction}{0.9}
+	\renewcommand{\floatpagefraction}{0.9}
+	\renewcommand{\textfraction}{0.1}
+}
+\RelaxFloats
+
+
+\usepackage{epsfig}
+\usepackage{times}
+\usepackage{xspace}
+\usepackage{url}
+\usepackage{dcolumn} % see Gossens et al p 129
+\usepackage{multirow}
+\usepackage{rotating}
+\usepackage{graphicx}
+\DeclareGraphicsRule{.idraw}{eps}{.idraw}{}
+\usepackage{subfigure}
+\usepackage{endnotes}
+
+\newcommand\comment[1]{{[\sffamily #1]}}
+
+%\pagenumbering{arabic}
+\begin{document}
+
+% Attempt to get latex to put the figures where we want them
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\floatpagefraction}{0.75}
+
+%\pagenumbering{arabic}
+% For camera ready submission we may have to put in what page this appears
+% in the proceedings.
+%\setpagenumber{9}
+
+\title{A Comparative Study of Network Testbed Usage Characteristics
+}
+
+\newcommand{\FromA}{\raisebox{8pt}{$\dagger$}}
+\newcommand{\FromAB}{\raisebox{8pt}{$\dagger\ddagger$}}
+
+\numberofauthors{1}
+\author{
+\alignauthor Jelena Mirkovic, Hao Shi, Alefiya Hussain \\
+ \affaddr USC/Information Sciences Institute \\ 
+ \email{mirkovic,haoshi,hussain@isi.edu}
+}
+
+\maketitle
+
+\input{abstract}
+\input{intro}
+\input{relatedwork}
+\input{terms}
+\input{data}
+\input{character}
+\input{function}
+%\input{evaluation}
+\input{conclusion}
+
+\bibliographystyle{plain}
+\bibliography{paper}
+
+\end{document}
